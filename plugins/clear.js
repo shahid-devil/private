@@ -11,7 +11,7 @@ Whats bot - Ravindu Manoj
 const {MessageType, GroupSettingChange, ChatModification, WAConnectionTest} = require('@adiwajshing/baileys');
 const QueenSew = require('../events');
 const Raviya = require('../config');
-const Pach = require('sewqueen-rs');
+const Pach = require('sewqueen-rs-pvt');
 
 var CLR_DESC = ''
 if (Raviya.LANG == 'SI') CLR_DESC = 'චැට් වල සියලු මැසේජ් ඉවත් කරයි.'
