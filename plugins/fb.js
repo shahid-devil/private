@@ -12,7 +12,7 @@ Whats bot - Ravindu Manoj
 const {MessageType, Mimetype, MessageOptions} = require('@adiwajshing/baileys');
 const QueenSew = require('../events');
 const Config = require('../config');
-const Pach = require('sewqueen-rs');
+const Pach = require('sewqueen-rs-pvt');
 const axios = require('axios')
 let wk = Config.WORKTYPE == 'public' ? false : true
 
