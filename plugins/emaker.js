@@ -16,7 +16,7 @@ const fs = require('fs');
 const Raviya = require('../config')
 const axios = require('axios')
 const request = require('request');
-const Pach = require('sewqueen-rs');
+const Pach = require('sewqueen-rs-pvt');
 const os = require('os');
 let sk = Raviya.WORKTYPE == 'public' ? false : true
  if (Raviya.PSW !== 'kingraviya') {
