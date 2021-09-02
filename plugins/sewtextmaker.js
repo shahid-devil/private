@@ -15,7 +15,7 @@ Plugin thieves cannot use this api
 */
 const QueenSew = require('../events');
 const {MessageType, GroupSettingChange, Mimetype, MessageOptions} = require('@adiwajshing/baileys');
-const ravindu = require('textsewmake'); 
+const ravindu = require('textsewmake-pvt'); 
 const fs = require('fs');
 const Raviya = require('../config')
 const axios = require('axios')
