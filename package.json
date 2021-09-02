@@ -1,6 +1,6 @@
 {
   "name": "sew-queen-pvt",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Sew",
   "main": "./QueenSewWhatsappBot/sew.js",
   "scripts": {
