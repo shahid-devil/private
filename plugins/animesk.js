@@ -13,7 +13,7 @@ const QueenSew = require('../events');
 const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
 const axios = require('axios');
 const Raviya = require('../config');
-const Pach = require('sewqueen-rs');
+const Pach = require('sewqueen-rs-pvt');
 let wk = Raviya.WORKTYPE == 'public' ? false : true
 var pic = ''
 var giff = ''
