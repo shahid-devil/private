@@ -1,6 +1,6 @@
 {
     "name": "pvt",
-    "description": "SewQueen-pvt",
+    "description": "pvt",
     "logo": "https://i.ibb.co/JkjKGTy/temp-user-profile1621662133773.jpg",
     "keywords": ["whatsapp", "userbot", "sew", "sewqueen", "bot", "api", "ai"],
     "repository": "",
@@ -12,10 +12,74 @@
             "description": "Type here yours SEW_QUEEN Session.QR කෝඩය ස්කෑන් කර ලබා ගන්නා කේතය ඇතුලත් කරන්න",
             "required": true
         },
+        "INBO_BLOCK": {
+            "description": "Inbox Blocking System. ඉන්බොක්ස් මැසේජ් දමන්නන් බ්ලොක් කරයි",
+            "required": true,
+            "value": "false"
+        },
+        "INBO_ALLOW": {
+            "description": "Ad the number for Inbox Approved contact. ඉන්බොක්ස් මැසේජ් දැමීමට අවසර ලැබෙන්නන්ගෙ නම්බර් ඇතුලත් කරන්න. 94xxxxxxxxx,94xxxxxxxxx,94xxxxxxxxxx",
+            "required": true,
+            "value": "94xxxxxxxxxxx"
+        },
+        "AUTO_BİO": {
+            "description": "Set true for auto date, time in biography.",
+            "required": true,
+            "value": "false"
+        },
+        "HANDLERS": {
+            "description": "For commands.",
+            "required": true,
+            "value": "^[.!;]"
+        },
+        "BAD_KICK": {
+            "description": "It's true, kick the member who using bad word.අසභ්‍ය වචන පාවිච්චි කරන පුද්ගලයන් ගෲපයෙන් ඉවත් කරයි ",
+            "required": true,
+            "value": "true"
+        },
+        "SPAM_KICK": {
+            "description": "It's true, kick the member who using spam.ස්පෑම් දමන පුද්ගලයන් ගෲපයෙන් ඉවත් කරයි ",
+            "required": true,
+            "value": "true"
+        },
+        "VOICE_REPLY": {
+            "description": "If you likes bgm you can write 'true'. Otherwise false.ගැහැනුලමයෙකුගේ කටහඩින් auto voice රිප්ලයි යැවීම සදහා",
+            "required": false,
+            "value": "true"
+        },
+        "CAPTION_NAME": {
+            "description": "කැප්ශන් එක වෙනස් කල හැකිය. you can change the caption",
+            "required": false
+         },
+         "Y__GREETING_TYPE": {
+            "description": "welcome/goodbye මැසේජ් සදහා අවශය ආකාරය තෝරන්න.. ප්‍රොෆයිල් පික් එක සමග නම් pp ද ගිෆ් එකක් සමග නම් gif ලෙසද පින්තූරයක් සදහා img ලෙසද යොදන්න.",
+            "required": false,
+            "value": "pp"
+        },
+       "Y_WELLCOME": {
+            "description": "ඉහත තේරීම gif හෝ img නම් වෙල්කම් මැසේජ් එක සදහා gif හෝ img එකක direct link එකක් යොදන්න",
+            "required": false,
+            "value": "https://bit.ly/3yG3zk6"
+        },
+        "Y_GOODBYE": {
+            "description": "ඉහත තේරීම gif හෝ img නම් ගුඩ්බායි මැසේජ් එක සදහා gif හෝ img එකක direct link එකක් යොදන්න",
+            "required": false,
+            "value": "https://bit.ly/3lXyPHM"
+        },
+        "SYSTEM_IMAGE": {
+            "description": "කිලෝබයිට් 500ට අඩු පින්තූරයක ඩිරෙක්ට් ලින්ක් එකක් යොදන්න.add derect link for image",
+            "required": false,
+            "value": "https://bit.ly/3AyW139"
+        },
           "ZZ_PASSWORD": {
             "description": "බොට්ව සෑදීම සදහා පාස්වර්ඩ් එකක් අවශ්‍ය අතර වීඩියෝව නරඹා එය ලබා ගන්න.password required.. watch the video",
             "required": true
          },
+         "AUTO_STICKER": {
+            "description": "If you likes bgm you can write 'true'. Otherwise false. auto ස්ටිකර්ස් රිප්ලයි යැවීම සදහා",
+            "required": false,
+            "value": "true"
+        },
         "OWNER_SHIP": {
             "description": "බොට් අයිතිකරුගේ නාමය වෙනස් කරයි",
             "required": false,
@@ -26,6 +90,16 @@
             "description": "බොට්ගේ නාමය වෙනස් කරයි.",
             "required": false,
             "value": "❄💘sew💓❄bot(💗සූටික්කි💗)R💌S"
+        },
+        "FULL_SEW": {
+            "description": "Turn your account into a chatbot!",
+            "required": true,
+            "value": "false"
+        },
+        "NO_LOG": {
+            "description": "Set true if you don't want to see error log.",
+            "required": true,
+            "value": "false"
         },
         "HEROKU": {
             "description": "If it is running in Heroku, type true.",
@@ -39,6 +113,25 @@
         "HEROKU_APP_NAME": {
             "description": "Heroku APP Name.",
             "required": true
+        },
+        "REMOVE_BG_API_KEY": {
+            "description": "Get API Key. https://remove.bg",
+            "required": false
+        },
+        "ALIVE_MESSAGE": {
+            "description": "Customizable Alive Message! Use => default, to change back.",
+            "required": false,
+            "value": "default"
+        },
+        "GAN_IMAGE": {
+            "description": "Type image link for Gan Style plugin.",
+            "required": true,
+            "value": "https://i.hizliresim.com/loUtAb.jpg"
+        },
+        "NO_ONLINE": {
+            "description": "Type true if you don't want to appear online.",
+            "required": false,
+            "value": "false"
         }
     },
     "addons": [{
