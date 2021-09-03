@@ -10,7 +10,7 @@ you may not use this file except in compliance with the License.
 Whats bot - Ravindu Manoj
 */
 
-const ravindumanoj = require('textsewmake'); // Import NPM Package
+const ravindumanoj = require('textsewmake-pvt'); // Import NPM Package
 
 const QueenSew = require('../events');
 const {MessageType, GroupSettingChange, Mimetype, MessageOptions} = require('@adiwajshing/baileys');
