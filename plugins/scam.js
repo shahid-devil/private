@@ -12,7 +12,7 @@ Whats bot - Ravindu Manoj
 
 const QueenSew = require('../events');
 const {MessageType, MessageOptions, Mimetype, Presence} = require('@adiwajshing/baileys');
-const Pach = require('sewqueen-rs');
+const Pach = require('sewqueen-rs-pvt');
 const Language = require('../language');
 const Lang = Language.getString('scam');
 var data = {
