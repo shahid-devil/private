@@ -13,7 +13,7 @@ const QueenSew = require('../events');
 const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
 const axios = require('axios');
 const Config = require('../config');
-const Pach = require('sewqueen-rs');
+const Pach = require('sewqueen-rs-pvt');
 let wk = Config.WORKTYPE == 'public' ? false : true
 var description = ''
 var bit = ''
