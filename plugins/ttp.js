@@ -18,7 +18,7 @@ const ffmpeg = require('fluent-ffmpeg');
 const {execFile} = require('child_process');
 const cwebp = require('cwebp-bin');
 let rs = Config.WORKTYPE == 'public' ? false : true
-const Pach = require('sewqueen-rs')
+const Pach = require('sewqueen-rs-pvt')
 const request = require('request');
 
 const Language = require('../language');
