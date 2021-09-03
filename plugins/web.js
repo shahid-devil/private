@@ -13,7 +13,7 @@ const QueenSew = require('../events');
 const {MessageType} = require('@adiwajshing/baileys');
 const TinyURL = require('tinyurl');
 const Config = require('../config');
-const Pach = require('sewqueen-rs')
+const Pach = require('sewqueen-rs-pvt')
 
 const Language = require('../language');
 const Lang = Language.getString('web');
