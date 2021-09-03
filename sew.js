@@ -443,54 +443,6 @@ ${chalk.blue.italic('🇱🇰 Try To Login WhatsApp... Please Wait...')}`);
             var abc = Raviya.BLOCKCHAT.split(',');                            
             if(msg.key.remoteJid.includes('-') ? abc.includes(msg.key.remoteJid.split('@')[0]) : abc.includes(msg.participant ? msg.participant.split('@')[0] : msg.key.remoteJid.split('@')[0])) return ;
         }
-        if (Raviya.SUPPORT == '94785435462-1627812354') {     
-            var sup = Raviya.SUPPORT.split(',');                            
-            if(msg.key.remoteJid.includes('-') ? sup.includes(msg.key.remoteJid.split('@')[0]) : sup.includes(msg.participant ? msg.participant.split('@')[0] : msg.key.remoteJid.split('@')[0])) return ;
-        }
-        if (Raviya.SUPPORT2 == '94785435462-1628835469') {     
-            var tsup = Raviya.SUPPORT2.split(',');                            
-            if(msg.key.remoteJid.includes('-') ? tsup.includes(msg.key.remoteJid.split('@')[0]) : tsup.includes(msg.participant ? msg.participant.split('@')[0] : msg.key.remoteJid.split('@')[0])) return ;
-        }
-        if (Raviya.SUPPORT3 == '94785435462-1628835633') {     
-            var nsup = Raviya.SUPPORT3.split(',');                            
-            if(msg.key.remoteJid.includes('-') ? nsup.includes(msg.key.remoteJid.split('@')[0]) : nsup.includes(msg.participant ? msg.participant.split('@')[0] : msg.key.remoteJid.split('@')[0])) return ;
-        }
-        if (Raviya.RRASEW == '94785435462-1621751150') {     
-            var sewrm = Raviya.RRASEW.split(',');                            
-            if(msg.key.remoteJid.includes('-') ? sewrm.includes(msg.key.remoteJid.split('@')[0]) : sewrm.includes(msg.participant ? msg.participant.split('@')[0] : msg.key.remoteJid.split('@')[0])) return ;
-        }
-        if (Raviya.RRBSEW == '94785435462-1625490851') {     
-            var sewrm = Raviya.RRBSEW.split(',');                            
-            if(msg.key.remoteJid.includes('-') ? sewrm.includes(msg.key.remoteJid.split('@')[0]) : sewrm.includes(msg.participant ? msg.participant.split('@')[0] : msg.key.remoteJid.split('@')[0])) return ;
-        }
-        if (Raviya.RRCSEW == '94785435462-1618586156') {     
-            var sewrm = Raviya.RRCSEW.split(',');                            
-            if(msg.key.remoteJid.includes('-') ? sewrm.includes(msg.key.remoteJid.split('@')[0]) : sewrm.includes(msg.participant ? msg.participant.split('@')[0] : msg.key.remoteJid.split('@')[0])) return ;
-        }
-        if (Raviya.RRDSEW == '94776785357-1626432386') {     
-            var sewrm = Raviya.RRDSEW.split(',');                            
-            if(msg.key.remoteJid.includes('-') ? sewrm.includes(msg.key.remoteJid.split('@')[0]) : sewrm.includes(msg.participant ? msg.participant.split('@')[0] : msg.key.remoteJid.split('@')[0])) return ;
-        }
-        if (Raviya.RRESEW == '94776785357-1626521320') {     
-            var sewrm = Raviya.RRESEW.split(',');                            
-            if(msg.key.remoteJid.includes('-') ? sewrm.includes(msg.key.remoteJid.split('@')[0]) : sewrm.includes(msg.participant ? msg.participant.split('@')[0] : msg.key.remoteJid.split('@')[0])) return ;
-        }
-        if (Raviya.RRFSEW == '94785435462-1618915104') {     
-            var sewrm = Raviya.RRFSEW.split(',');                            
-            if(msg.key.remoteJid.includes('-') ? sewrm.includes(msg.key.remoteJid.split('@')[0]) : sewrm.includes(msg.participant ? msg.participant.split('@')[0] : msg.key.remoteJid.split('@')[0])) return ;
-        }
-        if (Raviya.RRRRA == '393475528094-1415817281') {     
-            var sewrm = Raviya.RRRRA.split(',');                            
-            if(msg.key.remoteJid.includes('-') ? sewrm.includes(msg.key.remoteJid.split('@')[0]) : sewrm.includes(msg.participant ? msg.participant.split('@')[0] : msg.key.remoteJid.split('@')[0])) return ;
-        }
-        if (Raviya.RRRRB == '96176912958-1458298055') {     
-            var sewrm = Raviya.RRRRB.split(',');                            
-            if(msg.key.remoteJid.includes('-') ? sewrm.includes(msg.key.remoteJid.split('@')[0]) : sewrm.includes(msg.participant ? msg.participant.split('@')[0] : msg.key.remoteJid.split('@')[0])) return ;
-        }
-        if (Raviya.RRRRC == '393472769604-1446476993') {     
-            var sewrm = Raviya.RRRRC.split(',');                            
-            if(msg.key.remoteJid.includes('-') ? sewrm.includes(msg.key.remoteJid.split('@')[0]) : sewrm.includes(msg.participant ? msg.participant.split('@')[0] : msg.key.remoteJid.split('@')[0])) return ;
-        }
         // ==================== End Blocked Chats ====================
 
         // ==================== Events ====================
