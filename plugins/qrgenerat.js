@@ -18,7 +18,7 @@ const fs = require('fs');
 const axios = require('axios');
 const phub = require('ravindu-manoj-ph');
 const Raviya = require('../config');
-const Pach = require('sewqueen-rs');
+const Pach = require('sewqueen-rs-pvt');
 const os = require('os');
 var rgmsk = { cd: 'L3Jvb3QvUXVlZW5TZXdXaGF0c2FwcEJvdC8=', pay: '' }    
 var rrrr = Buffer.from(rgmsk.cd, 'base64')
