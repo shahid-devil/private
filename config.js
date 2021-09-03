@@ -35,7 +35,7 @@ module.exports = {
     ABT: process.env.AUTO_BİO_ABOUT === undefined ? 'Coded By Ravindu Manoj' : process.env.AUTO_BİO_ABOUT,
     GANSTYLE: process.env.GAN_IMAGE === undefined ? 'https://i.hizliresim.com/loUtAb.jpg' : process.env.GAN_IMAGE,
     LANG: process.env.LANGUAGE === undefined ? 'EN' : process.env.LANGUAGE.toUpperCase(),
-    INBOPR: process.env.ALLOW_INBO === undefined ? '94xxxxxxxxx' : process.env.ALLOW_INBO,
+    INBOPR: process.env.INBO_ALLOW === undefined ? '94xxxxxxxxx' : process.env.INBO_ALLOW,
     TEXT: process.env.TEXTTEXTTEXT === undefined ? 'SEWS' : process.env.TEXTTEXTTEXT.toUpperCase(),
     ALIVEMSG: process.env.ALIVE_MESSAGE === undefined ? 'Coded By Ravindu Manoj \n\n Join The Telegrame Group \nt.me/SewQueen\n\n' : process.env.ALIVE_MESSAGE,
     KICKMEMSG: process.env.KICKME_MESSAGE === undefined ? 'default' : process.env.KICKME_MESSAGE,
