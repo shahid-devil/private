@@ -81,7 +81,7 @@ QueenSew.newcmdaddtosew({pattern: '1best$', fromMe: sk, dontAdCommandList: true}
         command_cmd = '⛄ *Command:* '
         desc_cmd = '❄ *Description:* _'
     }
-    const msg = command_cmd + '```.sl3fire``` \n' + desc_cmd + t13 + '_\n' + usage_cmd + '.sl3fire Sew\n\n' +
+    const msd = command_cmd + '```.sl3fire``` \n' + desc_cmd + t13 + '_\n' + usage_cmd + '.sl3fire Sew\n\n' +
         command_cmd + '```.sl6neon``` \n' + desc_cmd + t77 + '_\n' + usage_cmd + '.sl6neon Sew\n\n' +
         command_cmd + '```.sl4graf``` \n' + desc_cmd + t67 + '_\n' + usage_cmd + '.sl4graf Sew\n\n' +
         command_cmd + '```.sl5graf``` \n' + desc_cmd + t74 + '_\n' + usage_cmd + '.sl5graf Sew\n\n' +
