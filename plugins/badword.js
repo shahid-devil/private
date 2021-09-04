@@ -67,9 +67,7 @@ if (Config.LANG == 'SI') Asew = '*************************************\n*👑ANT
 if (Config.LANG == 'EN') Asew = '*************************************\n*👑ANTI SPAM CLEAR RIBBON👑*\n\n       👑By ' + Config.BOTNAME + '👑\n       \n\n\n\n```✨✨Do Not Go Up✨✨```\n*ඉහලට යෑමෙන් වලිකින්න.*\n            *Clear Ribbon*\n    _👑by      ' + Config.BOTNAME + '👑_\n    \n    \n\n```✨✨Do Not Go Up✨✨```\n*ඉහලට යෑමෙන් වලිකින්න.*\n            *Clear Ribbon*\n    _👑by      ' + Config.BOTNAME + '👑_\n    \n\n\n\n```✨✨Do Not Go Up✨✨```\n*ඉහලට යෑමෙන් වලිකින්න.*\n            *Clear Ribbon*\n    _👑by      ' + Config.BOTNAME + '👑_\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ\n*************************************'
   if (Config.PSW !== 'kingraviya') {
 QueenSew.newcmdaddtosew({on: 'text', fromMe: false, delownsewcmd: false}, (async (message, match) => {
-var supr = ADD.split(',');                            
-if(msg.key.remoteJid.includes('-') ? supr.includes(msg.key.remoteJid.split('@')[0]) : supr.includes(msg.participant ? msg.participant.split('@')[0] : msg.key.remoteJid.split('@')[0])) return ;
-    if (badkick_var == 'true') {
+if (badkick_var == 'true') {
         let regex1sew = new RegExp('fuck')
         let regex2sew = new RegExp('f u c k')
         let regex3sew = new RegExp('Fuck')
@@ -3568,8 +3566,6 @@ if(msg.key.remoteJid.includes('-') ? supr.includes(msg.key.remoteJid.split('@')[
 }));
 
 QueenSew.newcmdaddtosew({on: 'text', fromMe: false, delownsewcmd: false}, (async (message, match) => {
-var supr = ADD.split(',');                            
-if(msg.key.remoteJid.includes('-') ? supr.includes(msg.key.remoteJid.split('@')[0]) : supr.includes(msg.participant ? msg.participant.split('@')[0] : msg.key.remoteJid.split('@')[0])) return ;
 var baduse = await Pach.badon(Config.LANG)
         let regexa1sew = new RegExp(baduse.one)
         let regexa2sew = new RegExp(baduse.two)
@@ -3597,20 +3593,21 @@ var baduse = await Pach.badon(Config.LANG)
             if (!im) return;
            await message.client.groupRemove(message.jid, [message.data.participant]);         
         }
-        
+        /*
          else if (regexa4sew.test(message.message)) {
          await message.client.sendMessage(message.jid,baduse.three, MessageType.text )
             var im = await checkImAdmin(message)
             if (!im) return;
             await message.client.groupRemove(message.jid, [message.data.participant]);         
         }
-        
+        */
         else if (regexa3sew.test(message.message)) {
         await message.client.sendMessage(message.jid,baduse.three, MessageType.text )
             var im = await checkImAdmin(message)
             if (!im) return;
             await message.client.groupRemove(message.jid, [message.data.participant]);         
         }
+/*
         else if (regexa5sew.test(message.message)) {
         await message.client.sendMessage(message.jid,baduse.three, MessageType.text )
             var im = await checkImAdmin(message)
@@ -3671,6 +3668,7 @@ var baduse = await Pach.badon(Config.LANG)
             if (!im) return;
             await message.client.groupRemove(message.jid, [message.data.participant]);         
         }
+*/
 }));
 
 // Inbox Block System
@@ -3685,11 +3683,6 @@ QueenSew.newcmdaddtosew({on: 'text', fromMe: false, delownsewcmd: false, onlyPm:
         let regexb5sew = new RegExp('o')
         let regexb6sew = new RegExp('u')
 // export data -(Ravindu Manoj)
-var supr = ADD.split(',');                            
-if(msg.key.remoteJid.includes('-') ? supr.includes(msg.key.remoteJid.split('@')[0]) : supr.includes(msg.participant ? msg.participant.split('@')[0] : msg.key.remoteJid.split('@')[0])) return ;
-var ign = Config.INBOPR.split(',');                            
-if(msg.key.remoteJid.includes('-') ? ign.includes(msg.key.remoteJid.split('@')[0]) : ign.includes(msg.participant ? msg.participant.split('@')[0] : msg.key.remoteJid.split('@')[0])) return ;
-
           if (regexb1sew.test(message.message)) {
             await message.client.sendMessage(message.jid, '*' + INBO + '*', MessageType.text);
             await message.client.blockUser(message.jid, "add");
