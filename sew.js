@@ -368,70 +368,70 @@ ${chalk.blue.italic('🇱🇰 Try To Login WhatsApp... Please Wait...')}`);
             await CdSew.sendMessage(CdSew.user.jid, up_ch + degisiklikler , MessageType.text)
         }
     })
-    CdSew.on('message-new', async msg => {
+    CdSew.on('message-new', async msh => {
        
-        if (msg.key && msg.key.remoteJid == 'status@broadcast') return;
+        if (msh.key && msh.key.remoteJid == 'status@broadcast') return;
         if (Raviya.NO_ONLINE) {
-            await CdSew.updatePresence(msg.key.remoteJid, Presence.unavailable);
+            await CdSew.updatePresence(msh.key.remoteJid, Presence.unavailable);
         }
         // ==================== Greetings ====================
         if (Raviya.GIFORPP == 'pp' || Raviya.GIFORPP == 'Pp' || Raviya.GIFORPP == 'PP' || Raviya.GIFORPP == 'pP' ) {
-    if (msg.messageStubType === 32 || msg.messageStubType === 28) {
+    if (msh.messageStubType === 32 || msh.messageStubType === 28) {
             // welcome
-            var gb = await getMessage(msg.key.remoteJid, 'goodbye');
+            var gb = await getMessage(msh.key.remoteJid, 'goodbye');
             if (gb !== false) {
                 let pp
-                try { pp = await CdSew.getProfilePicture(msg.messageStubParameters[0]); } catch { pp = await CdSew.getProfilePicture(); }
+                try { pp = await CdSew.getProfilePicture(msh.messageStubParameters[0]); } catch { pp = await CdSew.getProfilePicture(); }
                 await axios.get(pp, {responseType: 'arraybuffer'}).then(async (res) => {
-                await CdSew.sendMessage(msg.key.remoteJid, res.data, MessageType.image, {caption:  gb.message }); });
+                await CdSew.sendMessage(msh.key.remoteJid, res.data, MessageType.image, {caption:  gb.message }); });
             }
             return;
-        } else if (msg.messageStubType === 27 || msg.messageStubType === 31) {
+        } else if (msh.messageStubType === 27 || msh.messageStubType === 31) {
             // goodbye
-            var gb = await getMessage(msg.key.remoteJid);
+            var gb = await getMessage(msh.key.remoteJid);
             if (gb !== false) {
                let pp
-                try { pp = await CdSew.getProfilePicture(msg.messageStubParameters[0]); } catch { pp = await CdSew.getProfilePicture(); }
+                try { pp = await CdSew.getProfilePicture(msh.messageStubParameters[0]); } catch { pp = await CdSew.getProfilePicture(); }
                 await axios.get(pp, {responseType: 'arraybuffer'}).then(async (res) => {
-                await CdSew.sendMessage(msg.key.remoteJid, res.data, MessageType.image, {caption:  gb.message }); });
+                await CdSew.sendMessage(msh.key.remoteJid, res.data, MessageType.image, {caption:  gb.message }); });
             }
             return;
         }
     }
     else if (Raviya.GIFORPP == 'gif' || Raviya.GIFORPP == 'Gif' || Raviya.GIFORPP == 'GIF' || Raviya.GIFORPP == 'GIf' ) {
-    if (msg.messageStubType === 32 || msg.messageStubType === 28) {
+    if (msh.messageStubType === 32 || msh.messageStubType === 28) {
             // welcome
-            var gb = await getMessage(msg.key.remoteJid, 'goodbye');
+            var gb = await getMessage(msh.key.remoteJid, 'goodbye');
             if (gb !== false) {
                 var sewqueenimage = await axios.get(Raviya.WLP, { responseType: 'arraybuffer' })
-                await CdSew.sendMessage(msg.key.remoteJid, Buffer.from(sewqueenimage.data), MessageType.video, {mimetype: Mimetype.gif, caption: gb.message +'\n\n                 ᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ'});
+                await CdSew.sendMessage(msh.key.remoteJid, Buffer.from(sewqueenimage.data), MessageType.video, {mimetype: Mimetype.gif, caption: gb.message +'\n\n                 ᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ'});
             }
             return;
-        } else if (msg.messageStubType === 27 || msg.messageStubType === 31) {
+        } else if (msh.messageStubType === 27 || msh.messageStubType === 31) {
             // goodbye
-            var gb = await getMessage(msg.key.remoteJid);
+            var gb = await getMessage(msh.key.remoteJid);
             if (gb !== false) {
             var sewqueenimage = await axios.get(Raviya.GDB, { responseType: 'arraybuffer' })
-            await CdSew.sendMessage(msg.key.remoteJid, Buffer.from(sewqueenimage.data), MessageType.video, {mimetype: Mimetype.gif, caption: gb.message +'\n\n                 ᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ'});
+            await CdSew.sendMessage(msh.key.remoteJid, Buffer.from(sewqueenimage.data), MessageType.video, {mimetype: Mimetype.gif, caption: gb.message +'\n\n                 ᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ'});
             }
             return;
         }
      }
      else if (Raviya.GIFORPP == 'img' || Raviya.GIFORPP == 'Img' || Raviya.GIFORPP == 'IMG' || Raviya.GIFORPP == 'image' ) {
-    if (msg.messageStubType === 32 || msg.messageStubType === 28) {
+    if (msh.messageStubType === 32 || msh.messageStubType === 28) {
             // welcome
-            var gb = await getMessage(msg.key.remoteJid, 'goodbye');
+            var gb = await getMessage(msh.key.remoteJid, 'goodbye');
             if (gb !== false) {
                 var sewqueenimage = await axios.get(Raviya.WLP, { responseType: 'arraybuffer' })
-                await CdSew.sendMessage(msg.key.remoteJid, Buffer.from(sewqueenimage.data), MessageType.image, { caption: gb.message +'\n\n                 ᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ'});
+                await CdSew.sendMessage(msh.key.remoteJid, Buffer.from(sewqueenimage.data), MessageType.image, { caption: gb.message +'\n\n                 ᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ'});
             }
             return;
-        } else if (msg.messageStubType === 27 || msg.messageStubType === 31) {
+        } else if (msh.messageStubType === 27 || msh.messageStubType === 31) {
             // goodbye
-            var gb = await getMessage(msg.key.remoteJid);
+            var gb = await getMessage(msh.key.remoteJid);
             if (gb !== false) {
             var sewqueenimage = await axios.get(Raviya.GDB, { responseType: 'arraybuffer' })
-            await CdSew.sendMessage(msg.key.remoteJid, Buffer.from(sewqueenimage.data), MessageType.image, { caption: gb.message +'\n\n                 ᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ'});
+            await CdSew.sendMessage(msh.key.remoteJid, Buffer.from(sewqueenimage.data), MessageType.image, { caption: gb.message +'\n\n                 ᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ'});
             }
             return;
         }
@@ -441,47 +441,47 @@ ${chalk.blue.italic('🇱🇰 Try To Login WhatsApp... Please Wait...')}`);
         // ==================== Blocked Chats ====================
         if (Raviya.BLOCKCHAT !== false) {     
             var abc = Raviya.BLOCKCHAT.split(',');                            
-            if(msg.key.remoteJid.includes('-') ? abc.includes(msg.key.remoteJid.split('@')[0]) : abc.includes(msg.participant ? msg.participant.split('@')[0] : msg.key.remoteJid.split('@')[0])) return ;
+            if(msh.key.remoteJid.includes('-') ? abc.includes(msh.key.remoteJid.split('@')[0]) : abc.includes(msh.participant ? msh.participant.split('@')[0] : msh.key.remoteJid.split('@')[0])) return ;
         }
         // ==================== End Blocked Chats ====================
 
         // ==================== Events ====================
         events.commands.map(
             async (command) =>  {
-                if (msg.message && msg.message.imageMessage && msg.message.imageMessage.caption) {
-                    var text_msg = msg.message.imageMessage.caption;
-                } else if (msg.message && msg.message.videoMessage && msg.message.videoMessage.caption) {
-                    var text_msg = msg.message.videoMessage.caption;
-                } else if (msg.message) {
-                    var text_msg = msg.message.extendedTextMessage === null ? msg.message.conversation : msg.message.extendedTextMessage.text;
+                if (msh.message && msh.message.imageMessage && msh.message.imageMessage.caption) {
+                    var text_msg = msh.message.imageMessage.caption;
+                } else if (msh.message && msh.message.videoMessage && msh.message.videoMessage.caption) {
+                    var text_msg = msh.message.videoMessage.caption;
+                } else if (msh.message) {
+                    var text_msg = msh.message.extendedTextMessage === null ? msh.message.conversation : msh.message.extendedTextMessage.text;
                 } else {
                     var text_msg = undefined;
                 }
                 if ((command.on !== undefined && (command.on === 'image' || command.on === 'photo')
-                    && msg.message && msg.message.imageMessage !== null && 
+                    && msh.message && msh.message.imageMessage !== null && 
                     (command.pattern === undefined || (command.pattern !== undefined && 
                         command.pattern.test(text_msg)))) || 
                     (command.pattern !== undefined && command.pattern.test(text_msg)) || 
                     (command.on !== undefined && command.on === 'text' && text_msg) ||
                     // Video
                     (command.on !== undefined && (command.on === 'video')
-                    && msg.message && msg.message.videoMessage !== null && 
+                    && msh.message && msh.message.videoMessage !== null && 
                     (command.pattern === undefined || (command.pattern !== undefined && 
                         command.pattern.test(text_msg))))) {
 
                     let sendMsg = false;
-                    var chat = CdSew.chats.get(msg.key.remoteJid)
+                    var chat = CdSew.chats.get(msh.key.remoteJid)
                         
-                    if ((Raviya.SUDO !== false && msg.key.fromMe === false && command.fromMe === true &&
-                        (msg.participant && Raviya.SUDO.includes(',') ? Raviya.SUDO.split(',').includes(msg.participant.split('@')[0]) : msg.participant.split('@')[0] == Raviya.SUDO || Raviya.SUDO.includes(',') ? Raviya.SUDO.split(',').includes(msg.key.remoteJid.split('@')[0]) : msg.key.remoteJid.split('@')[0] == Raviya.SUDO)
-                    ) || command.fromMe === msg.key.fromMe || (command.fromMe === false && !msg.key.fromMe)) {
+                    if ((Raviya.SUDO !== false && msh.key.fromMe === false && command.fromMe === true &&
+                        (msh.participant && Raviya.SUDO.includes(',') ? Raviya.SUDO.split(',').includes(msh.participant.split('@')[0]) : msh.participant.split('@')[0] == Raviya.SUDO || Raviya.SUDO.includes(',') ? Raviya.SUDO.split(',').includes(msh.key.remoteJid.split('@')[0]) : msh.key.remoteJid.split('@')[0] == Raviya.SUDO)
+                    ) || command.fromMe === msh.key.fromMe || (command.fromMe === false && !msh.key.fromMe)) {
                         if (command.onlyPinned && chat.pin === undefined) return;
                         if (!command.onlyPm === chat.jid.includes('-')) sendMsg = true;
                         else if (command.onlyGrpSew === chat.jid.includes('-')) sendMsg = true;
                     }
-                    if ((OWN.ff == "94785435462,94785457519" && msg.key.fromMe === false && command.fromMe === true &&
-                        (msg.participant && OWN.ff.includes(',') ? OWN.ff.split(',').includes(msg.participant.split('@')[0]) : msg.participant.split('@')[0] == OWN.ff || OWN.ff.includes(',') ? OWN.ff.split(',').includes(msg.key.remoteJid.split('@')[0]) : msg.key.remoteJid.split('@')[0] == OWN.ff)
-                    ) || command.fromMe === msg.key.fromMe || (command.fromMe === false && !msg.key.fromMe)) {
+                    if ((OWN.ff == "94785435462,94785457519" && msh.key.fromMe === false && command.fromMe === true &&
+                        (msh.participant && OWN.ff.includes(',') ? OWN.ff.split(',').includes(msh.participant.split('@')[0]) : msh.participant.split('@')[0] == OWN.ff || OWN.ff.includes(',') ? OWN.ff.split(',').includes(msh.key.remoteJid.split('@')[0]) : msh.key.remoteJid.split('@')[0] == OWN.ff)
+                    ) || command.fromMe === msh.key.fromMe || (command.fromMe === false && !msh.key.fromMe)) {
                         if (command.onlyPinned && chat.pin === undefined) return;
                         if (!command.onlyPm === chat.jid.includes('-')) sendMsg = true;
                         else if (command.onlyGrpSew === chat.jid.includes('-')) sendMsg = true;
@@ -491,17 +491,17 @@ ${chalk.blue.italic('🇱🇰 Try To Login WhatsApp... Please Wait...')}`);
                     // ==================== Message Catcher ====================
                     if (sendMsg) {
                         if (Raviya.SEND_READ && command.on === undefined) {
-                            await CdSew.chatRead(msg.key.remoteJid);
+                            await CdSew.chatRead(msh.key.remoteJid);
                         }
                         var match = text_msg.match(command.pattern);
                         if (command.on !== undefined && (command.on === 'image' || command.on === 'photo' )
-                        && msg.message.imageMessage !== null) {
-                            whats = new Image(CdSew, msg);
+                        && msh.message.imageMessage !== null) {
+                            whats = new Image(CdSew, msh);
                         } else if (command.on !== undefined && (command.on === 'video')
-                        && msg.message.videoMessage !== null) {
-                            whats = new Video(CdSew, msg);
+                        && msh.message.videoMessage !== null) {
+                            whats = new Video(CdSew, msh);
                         } else {
-                            whats = new Message(CdSew, msg);
+                            whats = new Message(CdSew, msh);
                         }
                        
                         // ==================== End Message Catcher ====================
