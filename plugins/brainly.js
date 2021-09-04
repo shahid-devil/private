@@ -23,9 +23,9 @@ QueenSew.newcmdaddtosew({ pattern: 'brainly ?(.*)', fromMe: false, desc: brainly
               jawaban,
             } = response.data
 
-            const msg = `*Soal:* ${soal}
+            const msc = `*Soal:* ${soal}
 *බොරුවක් කියන්නෙ 😂:* ${jawaban.replace(/1Question/g, '*(1) Question*').replace(/2Question/g, '*(2) Question*').replace(/3Question/g, '*(3) Question*').replace(/Answer/g, '*Answer*').replace(/Brainly Found/g, '')}`
-            await message.client.sendMessage(message.jid, msg, MessageType.text)
+            await message.client.sendMessage(message.jid, msc, MessageType.text)
            })
       },
     )
