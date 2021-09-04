@@ -21,7 +21,6 @@ const os = require('os');
 let sk = Raviya.WORKTYPE == 'public' ? false : true
  if (Raviya.PSW !== 'kingraviya') {
 QueenSew.newcmdaddtosew({pattern: '1best$', fromMe: sk, dontAdCommandList: true}, (async (message, match) => {
-    var t10 = ''
     var t58 = ''
     var t59 = ''
     var t60 = ''
@@ -46,7 +45,6 @@ QueenSew.newcmdaddtosew({pattern: '1best$', fromMe: sk, dontAdCommandList: true}
     var t79 = ''
     var t80 = ''
         
-        t10 = 'Create anonymous hacker avatars cyan neon'
         t58 = 'Makes a Second Black and Pink Themed Logo.' // https://en.ephoto360.com/create-a-blackpink-neon-logo-text-effect-online-710.html
         t59 = 'Makes PUBG Themed Video Logo.' // https://en.ephoto360.com/create-pubg-style-glitch-video-avatar-554.html
         t60 = 'Makes Road Themed Logo.' // https://en.ephoto360.com/create-glowing-text-effects-online-706.html
@@ -83,7 +81,8 @@ QueenSew.newcmdaddtosew({pattern: '1best$', fromMe: sk, dontAdCommandList: true}
         command_cmd = '⛄ *Command:* '
         desc_cmd = '❄ *Description:* _'
     }
-    const msg =command_cmd + '```.sl6neon``` \n' + desc_cmd + t77 + '_\n' + usage_cmd + '.sl6neon Sew\n\n' +
+    const msg = const msg = command_cmd + '```.sl3fire``` \n' + desc_cmd + t13 + '_\n' + usage_cmd + '.sl3fire Sew\n\n' +
+        command_cmd + '```.sl6neon``` \n' + desc_cmd + t77 + '_\n' + usage_cmd + '.sl6neon Sew\n\n' +
         command_cmd + '```.sl4graf``` \n' + desc_cmd + t67 + '_\n' + usage_cmd + '.sl4graf Sew\n\n' +
         command_cmd + '```.sl5graf``` \n' + desc_cmd + t74 + '_\n' + usage_cmd + '.sl5graf Sew\n\n' +
         command_cmd + '```.sl2space``` \n' + desc_cmd + t68 + '_\n' + usage_cmd + '.sl2space Sew\n\n' +
@@ -104,7 +103,7 @@ QueenSew.newcmdaddtosew({pattern: '1best$', fromMe: sk, dontAdCommandList: true}
         command_cmd + '```.sl2gold``` \n' + desc_cmd + t79 + '_\n' + usage_cmd + '.sl2gold Sew\n\n' +
         command_cmd + '```.slsnow``` \n' + desc_cmd + t75 + '_\n' + usage_cmd + '.slsnow Sew\n\n' +
         command_cmd + '```.slballoon``` \n' + desc_cmd + t78 + '_\n' + usage_cmd + '.slballoon Sew\n\n' +
-        command_cmd + '```.slmatrix``` \n' + desc_cmd + t80 + '_\n' + usage_cmd + '.textmatrix Sew\n\n'
+        command_cmd + '```.slmatrix``` \n' + desc_cmd + t80 + '_\n' + usage_cmd + '.slmatrix Sew\n\n'
         
         var respoimage = await axios.get(`https://i.ibb.co/VHzbfYY/IMG-20210820-213542.jpg`, { responseType: 'arraybuffer' })
         await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: msg + ' ᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ'  })
@@ -230,13 +229,6 @@ QueenSew.newcmdaddtosew({pattern: 'sl2pubg ?(.*)', fromMe: sk, dontAdCommandList
     var buffer_data = await axios.get(vid.image, { responseType: 'arraybuffer'})
     await message.sendMessage(Buffer.from(buffer_data.data), MessageType.video, { mimetype: Mimetype.mp4 })
 }));
-
-QueenSew.newcmdaddtosew({pattern: 'slhacker ?(.*)', fromMe: sk, dontAdCommandList: true}, (async (message, match) => {
-    var img = await Pach.rgmsd(match[1], 'https://en.ephoto360.com/create-anonymous-hacker-avatars-cyan-neon-677.html')
-    var buffer_data = await axios.get(img.image, { responseType: 'arraybuffer'})
-    await message.sendMessage(Buffer.from(buffer_data.data), MessageType.image, { caption: Raviya.CPK })
-}));
-
 
 QueenSew.newcmdaddtosew({pattern: 'sl1test ?(.*)', fromMe: sk, dontAdCommandList: true}, (async (message, match) => {
     var img = await Pach.rgmsd(match[1], 'https://en.ephoto360.com/create-cute-girl-gamer-mascot-logo-online-687.html')
