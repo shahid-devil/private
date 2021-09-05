@@ -9,9 +9,11 @@ you may not use this file except in compliance with the License.
 Whats bot - Ravindu Manoj
 */
 
-const QueenSew = require('../events');
+const QueenSew = require(AAA);
 const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
-const Config = require('../config');
+const Config = require(AAB);
+const AAA = '../events'
+const AAB = '../config'
 
 
 
