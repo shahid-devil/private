@@ -12,7 +12,7 @@ This Is Official Pluging From Ravindu Manoj
 
 const ravindu = require('textsewmake');  // button msg npm export
 const QueenSew = require('../events');
-const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
+const {MessageType, MessageOptions, Mimetype} = require('sew-web');
 const exec = require('child_process').exec;
 const os = require("os");
 const fs = require('fs');
