@@ -1,4 +1,4 @@
-/*
+
 const QueenSew = require("../events");
 const { MessageType } = require("@adiwajshing/baileys");
 const { UploadToImgur } = require("../Utilis/Misc");
@@ -17,4 +17,4 @@ QueenSew.newcmdaddtosew({ pattern: "url", fromMe: true, desc: "Image to url." },
     return await message.sendMessage(url, { quoted: message.data });
   }
 );
-*/
+
