@@ -8,11 +8,10 @@ you may not use this file except in compliance with the License.
 
 Whats bot - Ravindu Manoj
 
-const AAA = '../events'
-const AAB = '../config'
-const QueenSew = require('${AAA}');
+*/
+const QueenSew = require('../events');
 const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
-const Config = require('${AAB}');
+const Config = require('../config');
 
 
 
@@ -510,4 +509,4 @@ Auto voice රිප්ලයි ඕෆ් කිරීම සදහා
   
   `);
     }));
-*/
+
