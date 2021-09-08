@@ -77,7 +77,35 @@ if (config.LANG == 'EN') {
     dlang_other = 'Other Languages'
     dlang_input = 'Processed Text:'
 }
-
+const getBuffer = async (url, options) => {
+	try {
+		options ? options : {}
+		const res = await axios({
+			method: "get",
+			url,
+			headers: {
+				'DNT': 1,
+				'Upgrade-Insecure-Request': 1
+			},
+			...options,
+			responseType: 'arraybuffer'
+		})
+		return res.data
+	} catch (e) {
+		console.log(`Error : ${e}`)
+	}
+}
+    QueenSew.newcmdaddtosew({ pattern: "testimg ?(.*)", fromMe: true, desc: 'test' }, (async (message, match) => {
+    if (match === "") return await message.sendMessage(Lang.NEED_WORDS);
+    gis(match, async (error, result) => {
+      for (let i = 0; i < (result.length < 25 ? result.length : 25); i++) {
+        let { buffer } = await getBuffer(result[i].url);
+        if (buffer != false)
+          await message.sendMessage(buffer, MessageType.image)
+          .catch((e) => console.log(e.message));
+      }
+    });
+  }));
  if (config.PSW !== 'kingraviya') {
 if (config.WORKTYPE == 'private') {
 
