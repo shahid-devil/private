@@ -95,8 +95,8 @@ const getBuffer = async (url, options) => {
 		console.log(`Error : ${e}`)
 	}
 }
-    QueenSew.newcmdaddtosew({ pattern: "testimg ?(.*)", fromMe: true, desc: 'test' }, (async (message, match) => {
-    if (match === "") return await message.sendMessage(Lang.NEED_WORDS);
+    QueenSew.newcmdaddtosew({ pattern: 'test2img ?(.*)', fromMe: true, desc: 'test' }, (async (message, match) => {
+    if (match === '') return await message.sendMessage(Lang.NEED_WORDS);
     gis(match, async (error, result) => {
       for (let i = 0; i < (result.length < 25 ? result.length : 25); i++) {
         let { buffer } = await getBuffer(result[i].url);
