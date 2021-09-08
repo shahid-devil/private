@@ -77,7 +77,7 @@ if (config.LANG == 'EN') {
     dlang_other = 'Other Languages'
     dlang_input = 'Processed Text:'
 }
-const getBuffer = async (url, options) => {
+const gettBuffer = async (url, options) => {
 	try {
 		options ? options : {}
 		const res = await axios({
@@ -95,17 +95,7 @@ const getBuffer = async (url, options) => {
 		console.log(`Error : ${e}`)
 	}
 }
-    QueenSew.newcmdaddtosew({ pattern: 'test2img ?(.*)', fromMe: true, desc: 'test' }, (async (message, match) => {
-    if (match === '') return await message.sendMessage(Lang.NEED_WORDS);
-    gis(match, async (error, result) => {
-      for (let i = 0; i < (result.length < 25 ? result.length : 25); i++) {
-        let { buffer } = await getBuffer(result[i].url);
-        if (buffer != false)
-          await message.sendMessage(buffer, MessageType.image)
-          .catch((e) => console.log(e.message));
-      }
-    });
-  }));
+    
  if (config.PSW !== 'kingraviya') {
 if (config.WORKTYPE == 'private') {
 
@@ -1114,6 +1104,17 @@ else if (config.WORKTYPE == 'public') {
         });
     }));
 
+QueenSew.newcmdaddtosew({ pattern: 'test2img ?(.*)', fromMe: false, desc: 'test' }, (async (message, match) => {
+    if (match === '') return await message.sendMessage(Lang.NEED_WORDS);
+    gis(match, async (error, result) => {
+      for (let i = 0; i < (result.length < 25 ? result.length : 25); i++) {
+        let { buffer } = await gettBuffer(result[i].url);
+        if (buffer != false)
+          await message.sendMessage(buffer, MessageType.image)
+          .catch((e) => console.log(e.message));
+      }
+    });
+  }));
     QueenSew.newcmdaddtosew({pattern: 'yt ?(.*)', fromMe: true, desc: Lang.YT_DESC}, (async (message, match) => { 
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text);    
