@@ -77,25 +77,6 @@ if (config.LANG == 'EN') {
     dlang_other = 'Other Languages'
     dlang_input = 'Processed Text:'
 }
-const gettBuffer = async (url, options) => {
-	try {
-		options ? options : {}
-		const res = await axios({
-			method: "get",
-			url,
-			headers: {
-				'DNT': 1,
-				'Upgrade-Insecure-Request': 1
-			},
-			...options,
-			responseType: 'arraybuffer'
-		})
-		return res.data
-	} catch (e) {
-		console.log(`Error : ${e}`)
-	}
-}
-    
  if (config.PSW !== 'kingraviya') {
 if (config.WORKTYPE == 'private') {
 
@@ -414,7 +395,7 @@ if (config.WORKTYPE == 'private') {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text);
         gis(match[1], async (error, result) => {
-            for (var i = 0; i < (result.length < 5 ? result.length : 5); i++) {
+            for (var i = 0; i < (result.length < 25 ? result.length : 25); i++) {
                 var get = got(result[i].url, {https: {rejectUnauthorized: false}});
                 var stream = get.buffer();
                 
@@ -946,7 +927,7 @@ else if (config.WORKTYPE == 'public') {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text);
         gis(match[1], async (error, result) => {
-            for (var i = 0; i < (result.length < 5 ? result.length : 5); i++) {
+            for (var i = 0; i < (result.length < 25 ? result.length : 25); i++) {
                 var get = got(result[i].url, {https: {rejectUnauthorized: false}});
                 var stream = get.buffer();
                 
@@ -1104,17 +1085,6 @@ else if (config.WORKTYPE == 'public') {
         });
     }));
 
-QueenSew.newcmdaddtosew({ pattern: 'test2img ?(.*)', fromMe: false, desc: 'test' }, (async (message, match) => {
-    if (match === '') return await message.sendMessage(Lang.NEED_WORDS);
-    gis(match, async (error, result) => {
-      for (let i = 0; i < (result.length < 25 ? result.length : 25); i++) {
-        let { buffer } = await gettBuffer(result[i].url);
-        if (buffer != false)
-          await message.sendMessage(buffer, MessageType.image)
-          .catch((e) => console.log(e.message));
-      }
-    });
-  }));
     QueenSew.newcmdaddtosew({pattern: 'yt ?(.*)', fromMe: true, desc: Lang.YT_DESC}, (async (message, match) => { 
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text);    
@@ -1152,7 +1122,7 @@ QueenSew.newcmdaddtosew({ pattern: 'test2img ?(.*)', fromMe: false, desc: 'test'
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text);
         gis(match[1], async (error, result) => {
-            for (var i = 0; i < (result.length < 5 ? result.length : 5); i++) {
+            for (var i = 0; i < (result.length < 25 ? result.length : 25); i++) {
                 var get = got(result[i].url, {https: {rejectUnauthorized: false}});
                 var stream = get.buffer();
                 
