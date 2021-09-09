@@ -1,6 +1,6 @@
 {
   "name": "sew-queen-pvt",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "description": "Sew Queen",
   "main": "./QueenSewWhatsappBot/sew.js",
   "scripts": {
@@ -24,6 +24,6 @@
   },
   "homepage": "https://github.com/ravindu01manoj/QueenSewWhatsappBot#readme",
   "dependencies": {
-    "sewqueen-rs-pvt": "1.3.2"
+    "sewqueen-rs-pvt": "1.3.1"
   }
 }
