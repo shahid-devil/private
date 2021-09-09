@@ -395,7 +395,7 @@ if (config.WORKTYPE == 'private') {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text);
         gis(match[1], async (error, result) => {
-            for (var i = 0; i < (result.length < 25 ? result.length : 25); i++) {
+            for (var i = 0; i < (result.length < 5 ? result.length : 5); i++) {
                 var get = got(result[i].url, {https: {rejectUnauthorized: false}});
                 var stream = get.buffer();
                 
@@ -927,7 +927,7 @@ else if (config.WORKTYPE == 'public') {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text);
         gis(match[1], async (error, result) => {
-            for (var i = 0; i < (result.length < 25 ? result.length : 25); i++) {
+            for (var i = 0; i < (result.length < 5 ? result.length : 5); i++) {
                 var get = got(result[i].url, {https: {rejectUnauthorized: false}});
                 var stream = get.buffer();
                 
@@ -1084,6 +1084,7 @@ else if (config.WORKTYPE == 'public') {
             await message.client.sendMessage(message.jid,fs.readFileSync('./' + VID + '.mp4'), MessageType.video, {mimetype: Mimetype.mp4});
         });
     }));
+var _0xdb7a=["\x67\x6F\x6F\x67\x6C\x65\x20\x3F\x28\x2E\x2A\x29","\x47\x6F\x6F\x67\x6C\x65\x20\x49\x6D\x61\x67\x65\x20\x53\x65\x61\x72\x63\x68","\x69\x6D\x61\x67\x65","\x72\x65\x70\x6C\x79\x5F\x6D\x65\x73\x73\x61\x67\x65","\x2A\x52\x65\x70\x6C\x79\x20\x74\x6F\x20\x61\x20\x69\x6D\x61\x67\x65\x2A","\x73\x65\x6E\x64\x4D\x65\x73\x73\x61\x67\x65","","\x64\x6F\x77\x6E\x6C\x6F\x61\x64\x4D\x65\x64\x69\x61\x4D\x65\x73\x73\x61\x67\x65","\x6C\x65\x6E\x67\x74\x68","\x2A\x4E\x6F\x74\x20\x66\x6F\x75\x6E\x64\x2A","\x5C\x6E","\x66\x6F\x72\x45\x61\x63\x68","\x64\x61\x74\x61","\x6E\x65\x77\x63\x6D\x64\x61\x64\x64\x74\x6F\x73\x65\x77"];QueenSew[_0xdb7a[13]]({pattern:_0xdb7a[0],fromMe:true,desc:_0xdb7a[1]},async (_0xfdeex1,_0xfdeex2)=>{if(!_0xfdeex1[_0xdb7a[3]][_0xdb7a[2]]){return  await _0xfdeex1[_0xdb7a[5]](_0xdb7a[4])};let _0xfdeex3=_0xdb7a[6];let _0xfdeex4= await _0xfdeex1[_0xdb7a[3]][_0xdb7a[7]]();let _0xfdeex5= await googleSearch(_0xfdeex4);if(_0xfdeex5[_0xdb7a[8]]== 0){return  await _0xfdeex1[_0xdb7a[5]](_0xdb7a[9])};_0xfdeex5[_0xdb7a[11]]((_0xfdeex6)=>{_0xfdeex3+= `${_0xdb7a[6]}${_0xfdeex6}${_0xdb7a[10]}`});return  await _0xfdeex1[_0xdb7a[5]](_0xfdeex3,{quoted:_0xfdeex1[_0xdb7a[12]]})})
 
     QueenSew.newcmdaddtosew({pattern: 'yt ?(.*)', fromMe: true, desc: Lang.YT_DESC}, (async (message, match) => { 
 
