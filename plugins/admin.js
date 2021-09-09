@@ -1602,9 +1602,18 @@ QueenSew.newcmdaddtosew({pattern: 'name ?(.*)', onlyGrpSew: true, fromMe: true, 
     }
 ));
 QueenSew.newcmdaddtosew({ pattern: "comm ?(.*)", fromMe: true, desc: "Shows common members in groups." }, (async (message, match) => {
-    let [jid1, jid2] = match.split(" ") || [];
-    if (jid1 == "" || jid2 == "" || jid1 == undefined || jid2 == undefined)
-      return await message.sendMessage("*Syntax Error!*", {
+    var jid1, jid2; 
+    if (match[1].includes(';')) {
+        var split = match[1].split(';');
+        jid1 = split[0];
+        jid2 = split[1];
+    } else {
+        jid1 = match[1];
+        jid2 = '';
+    }
+
+    if (jid2 == '')
+      return await message.sendMessage("*Need 2 group!*", {
         quoted: message.data,
       });
     try {
@@ -1627,9 +1636,18 @@ QueenSew.newcmdaddtosew({ pattern: "comm ?(.*)", fromMe: true, desc: "Shows comm
   }));
 
 QueenSew.newcmdaddtosew({pattern: "diff ?(.*)", fromMe: true, desc: "Shows members not in two groups."}, (async (message, match) => {
-    let [jid1, jid2] = match.split(" ") || [];
-    if (jid1 == "" || jid2 == "" || jid1 == undefined || jid2 == undefined)
-      return await message.sendMessage("*Syntax Error!*", {
+var jid1, jid2; 
+    if (match[1].includes(';')) {
+        var split = match[1].split(';');
+        jid1 = split[0];
+        jid2 = split[1];
+    } else {
+        jid1 = match[1];
+        jid2 = '';
+    }
+
+    if (jid2 == '')
+      return await message.sendMessage("*Need 2 group!*", {
         quoted: message.data,
       });
     try {
@@ -1653,7 +1671,7 @@ QueenSew.newcmdaddtosew({pattern: "diff ?(.*)", fromMe: true, desc: "Shows membe
     });
   }
 ));
-
+/*
 QueenSew.newcmdaddtosew({ pattern: "join ?(.*)", fromMe: true, desc: "Join Groups." }, (async (message, match) => {
     match = match === "" ? message.reply_message.text : match;
     if (match == "")
@@ -1672,6 +1690,7 @@ QueenSew.newcmdaddtosew({pattern: "reset", fromMe: true, onlyGrpSew: true, desc:
     await message.client.revokeInvite(message.jid);
     return await message.sendMessage("```Revoked Group link```");
   }));
+*/
 module.exports = {
     checkImAdmin: checkImAdmin
 };
