@@ -1089,7 +1089,13 @@ else if (config.WORKTYPE == 'public') {
     if (!message.reply_message.image)
       return await message.sendMessage("*Reply to a image*"); //{
     let msg = '';
-    let location = await message.reply_message.downloadMediaMessage();
+    var location = await message.client.downloadAndSaveMediaMessage({
+            key: {
+                remoteJid: message.reply_message.jid,
+                id: message.reply_message.id
+            },
+            message: message.reply_message.data.quotedMessage
+        }); 
     let result = await googleSearch(location);
     if (result.length == 0) return await message.sendMessage("*Not found*");
     result.forEach((url) => {
@@ -1098,6 +1104,7 @@ else if (config.WORKTYPE == 'public') {
     return await message.sendMessage(msg, { quoted: message.data });
   }
 );
+
     QueenSew.newcmdaddtosew({pattern: 'yt ?(.*)', fromMe: true, desc: Lang.YT_DESC}, (async (message, match) => { 
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text);    
