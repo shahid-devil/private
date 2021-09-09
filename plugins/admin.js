@@ -1601,7 +1601,77 @@ QueenSew.newcmdaddtosew({pattern: 'name ?(.*)', onlyGrpSew: true, fromMe: true, 
     await message.client.sendMessage(message.jid,SEWB,MessageType.text);
     }
 ));
+QueenSew.newcmdaddtosew({ pattern: "comm ?(.*)", fromMe: true, desc: "Shows common members in groups." }, (async (message, match) => {
+    let [jid1, jid2] = match.split(" ") || [];
+    if (jid1 == "" || jid2 == "" || jid1 == undefined || jid2 == undefined)
+      return await message.sendMessage("*Syntax Error!*", {
+        quoted: message.data,
+      });
+    try {
+      var grup1 = await message.groupMetadata(jid1);
+      var grup2 = await message.groupMetadata(jid2);
+    } catch (error) {
+      return await message.sendMessage(
+        "*I don't have permission to acess these groups!*",
+        { quoted: message.data }
+      );
+    }
+    let common = "";
+    let sonuc1 = grup1.map((member) => member.jid);
+    let sonuc2 = grup2.map((member) => member.jid);
+    let com = sonuc1.filter((x) => sonuc2.includes(x));
+    com.forEach((member) => (common += `@${member.split("@")[0]}\n`));
+    return await message.sendMessage(common, {
+      contextInfo: { mentionedJid: com },
+    });
+  }));
 
+QueenSew.newcmdaddtosew({pattern: "diff ?(.*)", fromMe: true, desc: "Shows members not in two groups."}, (async (message, match) => {
+    let [jid1, jid2] = match.split(" ") || [];
+    if (jid1 == "" || jid2 == "" || jid1 == undefined || jid2 == undefined)
+      return await message.sendMessage("*Syntax Error!*", {
+        quoted: message.data,
+      });
+    try {
+      var grup1 = await message.groupMetadata(jid1);
+      var grup2 = await message.groupMetadata(jid2);
+    } catch (error) {
+      return await message.sendMessage(
+        "*I don't have permission to acess these groups!*",
+        { quoted: message.data }
+      );
+    }
+    let diff = "";
+    let sonuc1 = grup1.map((member) => member.jid);
+    let sonuc2 = grup2.map((member) => member.jid);
+    let difference = sonuc1
+      .filter((x) => !sonuc2.includes(x))
+      .concat(sonuc2.filter((x) => !sonuc1.includes(x)));
+    difference.forEach((member) => (diff += `@${member.split("@")[0]}\n`));
+    return await message.sendMessage(diff, {
+      contextInfo: { mentionedJid: difference },
+    });
+  }
+));
+
+QueenSew.newcmdaddtosew({ pattern: "join ?(.*)", fromMe: true, desc: "Join Groups." }, (async (message, match) => {
+    match = match === "" ? message.reply_message.text : match;
+    if (match == "")
+      return await message.sendMessage("*GIVE ME A WA INVITE LINK*");
+    let wa = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})/;
+    let [_, code] = message.message.match(wa) || [];
+    if (!code) return await message.sendMessage("*Invalid invite link*");
+    await message.client.acceptInvite(code);
+    return await message.sendMessage("```Joined```");
+  }));
+
+QueenSew.newcmdaddtosew({pattern: "reset", fromMe: true, onlyGrpSew: true, desc: "Revoke invite link."}, (async (message, match) => {
+    let participants = await message.groupMetadata(message.jid);
+    let im = await checkImAdmin(participants, message.client.user.jid);
+    if (!im) return await message.sendMessage(Lang.IM_NOT_ADMIN);
+    await message.client.revokeInvite(message.jid);
+    return await message.sendMessage("```Revoked Group link```");
+  }));
 module.exports = {
     checkImAdmin: checkImAdmin
 };
