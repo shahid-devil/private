@@ -29,7 +29,7 @@ const sewig = match[1]
    
     await message.client.sendMessage(message.jid,'*Video description*\n\n' + sewikg.result.disc + '\n\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ', MessageType.text ,{quoted: message.data});    
 }));
-QueenSew.newcmdaddtosew({pattern: 'url', fromMe: RS, desc: Raivi}, (async (message, match) => {    
+QueenSew.newcmdaddtosew({pattern: 'url', fromMe: RS, desc: Ravi}, (async (message, match) => {    
     if (message.reply_message === false || message.reply_message.image === false) return await message.client.sendMessage(message.jid,SEW);
     var location = await message.client.downloadAndSaveMediaMessage({
         key: {
