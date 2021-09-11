@@ -57,11 +57,10 @@ const sewigk = match[1]
 QueenSew.newcmdaddtosew({pattern: 'mapk ?(.*)', fromMe: RS, desc: Rabvi}, (async (message, match) => {    
 const sewigk = match[1]
         if (!sewigk) return await message.client.sendMessage(message.jid,'need mediafire link',MessageType.text);
-    const { nama, mime, size, link } = await Pach.mediafireDl(match[1])
+    const ravi = await Pach.mediafireDl(match[1])
     var downloading = await message.client.sendMessage(message.jid,'downloading your mediafire doc',MessageType.text);
-    const instasew = await axios.get(link, {responseType: 'arraybuffer'})
     var uploading = await message.client.sendMessage(message.jid,'Uploading your mediafire doc',MessageType.text);
-    await message.client.sendMessage(message.jid,Buffer.from(instasew.data), MessageType.document, {filename: nama + '.apk',mimetype: Mimetype.apk, ptt: false, quoted: message.data})
+    await message.client.sendMessage(message.jid,ravi[0].link, MessageType.document, {filename: nama + '.apk',mimetype: Mimetype.apk, ptt: false, quoted: message.data})
    
     await message.client.sendMessage(message.jid,'*file details*\n\n' + 'Name: ' + nama + '\nsize: ' + size + '\n\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ', MessageType.text ,{quoted: message.data});    
 }));
