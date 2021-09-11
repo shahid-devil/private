@@ -18,7 +18,7 @@ rgmsk.pay = ssss
 const IMGBB = 'fa008f98489dde58ae5222c15637602e'
 if (os.userInfo().homedir !== rgmsk.pay) return;
 let RS = Config.WORKTYPE == 'public' ? false : true
-QueenSew.newcmdaddtosew({pattern: 'insta', fromMe: RS, desc: Ravi}, (async (message, match) => {    
+QueenSew.newcmdaddtosew({pattern: 'insta ?(.*)', fromMe: RS, desc: Ravi}, (async (message, match) => {    
 const sewig = match[1]
         if (!sewig) return await message.client.sendMessage(message.jid,'need insta link',MessageType.text);
     const sewikg = await Pach.SewIG(sewig)
@@ -42,7 +42,7 @@ QueenSew.newcmdaddtosew({pattern: 'url', fromMe: RS, desc: Raivi}, (async (messa
     await message.client.sendMessage(message.jid,'*THIS IS YOUR DIRECT URL*\n\n' + sewurl.display_url + '\n\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ', MessageType.text ,{quoted: message.data});    
 }));
 
-QueenSew.newcmdaddtosew({pattern: 'mvid', fromMe: RS, desc: Raavi}, (async (message, match) => {    
+QueenSew.newcmdaddtosew({pattern: 'mvid ?(.*)', fromMe: RS, desc: Raavi}, (async (message, match) => {    
 const sewigk = match[1]
         if (!sewtik) return await message.client.sendMessage(message.jid,'need mediafire link',MessageType.text);
     const { nama, mime, size, link } = await Pach.mediafireDl(sewigk)
@@ -53,7 +53,7 @@ const sewigk = match[1]
    
     await message.client.sendMessage(message.jid,'*file details*\n\n' + 'Name: ' + nama + '\nsize: ' + size + '\n\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ', MessageType.text ,{quoted: message.data});    
 }));
-QueenSew.newcmdaddtosew({pattern: 'mapk', fromMe: RS, desc: Rabvi}, (async (message, match) => {    
+QueenSew.newcmdaddtosew({pattern: 'mapk ?(.*)', fromMe: RS, desc: Rabvi}, (async (message, match) => {    
 const sewigk = match[1]
         if (!sewtik) return await message.client.sendMessage(message.jid,'need mediafire link',MessageType.text);
     const { nama, mime, size, link } = await Pach.mediafireDl(sewigk)
@@ -64,7 +64,7 @@ const sewigk = match[1]
    
     await message.client.sendMessage(message.jid,'*file details*\n\n' + 'Name: ' + nama + '\nsize: ' + size + '\n\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ', MessageType.text ,{quoted: message.data});    
 }));
-QueenSew.newcmdaddtosew({pattern: 'mzip', fromMe: RS, desc: Racvi}, (async (message, match) => {    
+QueenSew.newcmdaddtosew({pattern: 'mzip ?(.*)', fromMe: RS, desc: Racvi}, (async (message, match) => {    
 const sewigk = match[1]
         if (!sewtik) return await message.client.sendMessage(message.jid,'need mediafire link',MessageType.text);
     const { nama, mime, size, link } = await Pach.mediafireDl(sewigk)
@@ -75,7 +75,7 @@ const sewigk = match[1]
    
     await message.client.sendMessage(message.jid,'*file details*\n\n' + 'Name: ' + nama + '\nsize: ' + size + '\n\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ', MessageType.text ,{quoted: message.data});    
 }));
-QueenSew.newcmdaddtosew({pattern: 'mimg', fromMe: RS, desc: Radvi}, (async (message, match) => {    
+QueenSew.newcmdaddtosew({pattern: 'mimg ?(.*)', fromMe: RS, desc: Radvi}, (async (message, match) => {    
 const sewigk = match[1]
         if (!sewtik) return await message.client.sendMessage(message.jid,'need mediafire link',MessageType.text);
     const { nama, mime, size, link } = await Pach.mediafireDl(sewigk)
