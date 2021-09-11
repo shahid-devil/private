@@ -60,7 +60,7 @@ const sewigk = match[1]
     const ravi = await Pach.mediafireDl(match[1])
     var downloading = await message.client.sendMessage(message.jid,'downloading your mediafire doc',MessageType.text);
     var uploading = await message.client.sendMessage(message.jid,'Uploading your mediafire doc',MessageType.text);
-    await message.client.sendMessage(message.jid,ravi[0].link, MessageType.document, {filename: 'nama.apk',mimetype: Mimetype.apk, ptt: false, quoted: message.data})
+    await message.client.sendMessage(message.jid,ravi[0].link, MessageType.document, {filename: 'nama.apk',mimetype: ravi[0].mime, ptt: false, quoted: message.data})
    
     await message.client.sendMessage(message.jid,'*file details*\n\n' + 'Name: ' + 'nama' + '\nsize: ' + size + '\n\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ', MessageType.text ,{quoted: message.data});    
 }));
