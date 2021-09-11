@@ -169,10 +169,11 @@ QueenSew.newcmdaddtosew({pattern: 'sl3space ?(.*)', fromMe: sk, dontAdCommandLis
     var buffer_data = await axios.get(img.image, { responseType: 'arraybuffer'})
     await message.sendMessage(Buffer.from(buffer_data.data), MessageType.image, { caption: Raviya.CPK })
 }));
-QueenSew.newcmdaddtosew({pattern: 'slangel ?(.*)', fromMe: sk, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'slangle ?(.*)', fromMe: sk, dontAdCommandList: true}, (async (message, match) => {
     var img = await Pach.rgmsd(match[1], 'https://en.ephoto360.com/wings-galaxy-206.html')
+   var ravi = await axios.get('https://i.ibb.co/MswXM2W/bf3808856cd9.jpg', { responseType: 'arraybuffer'})
     var buffer_data = await axios.get(img.image, { responseType: 'arraybuffer'})
-    await message.sendMessage(Buffer.from(buffer_data.data), MessageType.image, { caption: Raviya.CPK })
+    await message.sendMessage(Buffer.from(buffer_data.data), MessageType.image, { caption: Raviya.CPK, thumbnail: Buffer.from(ravi.data))
 }));
 QueenSew.newcmdaddtosew({pattern: 'sl2pink ?(.*)', fromMe: sk, dontAdCommandList: true}, (async (message, match) => {
     var img = await Pach.rgmsd(match[1], 'https://en.ephoto360.com/create-a-blackpink-neon-logo-text-effect-online-710.html')
