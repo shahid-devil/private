@@ -44,7 +44,7 @@ QueenSew.newcmdaddtosew({pattern: 'url', fromMe: RS, desc: Ravi}, (async (messag
 
 QueenSew.newcmdaddtosew({pattern: 'mvid ?(.*)', fromMe: RS, desc: Raavi}, (async (message, match) => {    
 const sewigk = match[1]
-        if (!sewtik) return await message.client.sendMessage(message.jid,'need mediafire link',MessageType.text);
+        if (!sewigk) return await message.client.sendMessage(message.jid,'need mediafire link',MessageType.text);
     const { nama, mime, size, link } = await Pach.mediafireDl(sewigk)
     var downloading = await message.client.sendMessage(message.jid,'downloading your mediafire doc',MessageType.text);
     const instasew = await axios.get(link, {responseType: 'arraybuffer'})
@@ -55,7 +55,7 @@ const sewigk = match[1]
 }));
 QueenSew.newcmdaddtosew({pattern: 'mapk ?(.*)', fromMe: RS, desc: Rabvi}, (async (message, match) => {    
 const sewigk = match[1]
-        if (!sewtik) return await message.client.sendMessage(message.jid,'need mediafire link',MessageType.text);
+        if (!sewigk) return await message.client.sendMessage(message.jid,'need mediafire link',MessageType.text);
     const { nama, mime, size, link } = await Pach.mediafireDl(sewigk)
     var downloading = await message.client.sendMessage(message.jid,'downloading your mediafire doc',MessageType.text);
     const instasew = await axios.get(link, {responseType: 'arraybuffer'})
@@ -66,7 +66,7 @@ const sewigk = match[1]
 }));
 QueenSew.newcmdaddtosew({pattern: 'mzip ?(.*)', fromMe: RS, desc: Racvi}, (async (message, match) => {    
 const sewigk = match[1]
-        if (!sewtik) return await message.client.sendMessage(message.jid,'need mediafire link',MessageType.text);
+        if (!sewigk) return await message.client.sendMessage(message.jid,'need mediafire link',MessageType.text);
     const { nama, mime, size, link } = await Pach.mediafireDl(sewigk)
     var downloading = await message.client.sendMessage(message.jid,'downloading your mediafire doc',MessageType.text);
     const instasew = await axios.get(link, {responseType: 'arraybuffer'})
@@ -77,7 +77,7 @@ const sewigk = match[1]
 }));
 QueenSew.newcmdaddtosew({pattern: 'mimg ?(.*)', fromMe: RS, desc: Radvi}, (async (message, match) => {    
 const sewigk = match[1]
-        if (!sewtik) return await message.client.sendMessage(message.jid,'need mediafire link',MessageType.text);
+        if (!sewigk) return await message.client.sendMessage(message.jid,'need mediafire link',MessageType.text);
     const { nama, mime, size, link } = await Pach.mediafireDl(sewigk)
     var downloading = await message.client.sendMessage(message.jid,'downloading your mediafire doc',MessageType.text);
     const instasew = await axios.get(link, {responseType: 'arraybuffer'})
