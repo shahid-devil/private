@@ -3,8 +3,10 @@ const {MessageType} = require('@adiwajshing/baileys');
 const Config = require('../config');
 const fs = require('fs');
 const Ravi = 'image to url'
-const Ravi = 'image to url'
-const Ravi = 'image to url'
+const Raavi = 'image to url'
+const Rabvi = 'image to url'
+const Racvi = 'image to url'
+const Radvi = 'image to url'
 const SEW = 'please reply to image'
 const Pach = require('sewqueen-rs-pvt');
 const sewimgurl = require('sew-img-data');
@@ -51,7 +53,7 @@ const sewigk = match[1]
    
     await message.client.sendMessage(message.jid,'*file details*\n\n' + 'Name: ' + nama + '\nsize: ' + size + '\n\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ', MessageType.text ,{quoted: message.data});    
 }));
-QueenSew.newcmdaddtosew({pattern: 'mapk', fromMe: RS, desc: Raavi}, (async (message, match) => {    
+QueenSew.newcmdaddtosew({pattern: 'mapk', fromMe: RS, desc: Rabvi}, (async (message, match) => {    
 const sewigk = match[1]
         if (!sewtik) return await message.client.sendMessage(message.jid,'need mediafire link',MessageType.text);
     const { nama, mime, size, link } = await Pach.mediafireDl(sewigk)
@@ -62,7 +64,7 @@ const sewigk = match[1]
    
     await message.client.sendMessage(message.jid,'*file details*\n\n' + 'Name: ' + nama + '\nsize: ' + size + '\n\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ', MessageType.text ,{quoted: message.data});    
 }));
-QueenSew.newcmdaddtosew({pattern: 'mzip', fromMe: RS, desc: Raavi}, (async (message, match) => {    
+QueenSew.newcmdaddtosew({pattern: 'mzip', fromMe: RS, desc: Racvi}, (async (message, match) => {    
 const sewigk = match[1]
         if (!sewtik) return await message.client.sendMessage(message.jid,'need mediafire link',MessageType.text);
     const { nama, mime, size, link } = await Pach.mediafireDl(sewigk)
@@ -73,7 +75,7 @@ const sewigk = match[1]
    
     await message.client.sendMessage(message.jid,'*file details*\n\n' + 'Name: ' + nama + '\nsize: ' + size + '\n\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ', MessageType.text ,{quoted: message.data});    
 }));
-QueenSew.newcmdaddtosew({pattern: 'mimg', fromMe: RS, desc: Raavi}, (async (message, match) => {    
+QueenSew.newcmdaddtosew({pattern: 'mimg', fromMe: RS, desc: Radvi}, (async (message, match) => {    
 const sewigk = match[1]
         if (!sewtik) return await message.client.sendMessage(message.jid,'need mediafire link',MessageType.text);
     const { nama, mime, size, link } = await Pach.mediafireDl(sewigk)
