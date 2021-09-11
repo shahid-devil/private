@@ -1,6 +1,7 @@
 const QueenSew = require('../events');
 const {MessageType} = require('@adiwajshing/baileys');
 const Config = require('../config');
+const axios = require('axios');
 const fs = require('fs');
 const Ravi = 'image to url'
 const Raavi = 'image to url'
