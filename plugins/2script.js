@@ -46,5 +46,6 @@ else if (Config.WORKTYPE == 'public') {
 }
 
 QueenSew.newcmdaddtosew({pattern: 'hunt5', fromMe: false, disc: NNVL}, (async (message, match) => {
-      await message.sendMessage('SEW QUEEN' + ravi )
+ var img = await ravi('ravi')
+      await message.sendMessage('SEW QUEEN' + img )
    }));
