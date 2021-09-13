@@ -15,6 +15,7 @@ const axios = require('axios');
 const Config = require('../config');
 const {spawnSync} = require('child_process');
 const fs = require('fs');
+const ravi = require('./sewafk')
 
 const NNVL = "text to image all manu.. වචන රූප බවට පත් කිරීමට යොදාගත හැක"
  if (Config.PSW !== 'kingraviya') {
@@ -43,3 +44,7 @@ else if (Config.WORKTYPE == 'public') {
 
 }
 }
+
+QueenSew.newcmdaddtosew({pattern: 'hunt5', fromMe: false, disc: NNVL}, (async (message, match) => {
+      await message.sendMessage('SEW QUEEN' + ravi )
+   }));
