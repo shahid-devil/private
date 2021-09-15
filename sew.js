@@ -16,6 +16,7 @@ const Raviya = require('./config');
 const {WAConnection, MessageOptions, MessageType, Mimetype, Presence} = require('@adiwajshing/baileys');
 const axios = require('axios');
 const got = require('got');
+const Heroku = require('heroku-client');
 const simpleGit = require('simple-git');
 const git = simpleGit();
 const {Message, StringSession, Image, Video} = require('./sewqueen/');
