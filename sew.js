@@ -22,6 +22,16 @@ const {Message, StringSession, Image, Video} = require('./sewqueen/');
 const { DataTypes } = require('sequelize');
 const { GreetingsDB, getMessage } = require("./plugins/sql/greetings");
 const Pach = require('sewqueen-rs-pvt');
+const heroku = new Heroku({
+    token: Raviya.HEROKU.API_KEY
+});
+const os = require("os");
+const execx = require('child_process').exec;
+const ytdl = require('ytdl-core');
+const ffmpeg = require('fluent-ffmpeg');
+let baseURI = '/apps/' + Raviya.HEROKU.APP_NAME;
+const Language = require('./language');
+const Lang = Language.getString('updater');
 
 const SewQueenDB = Raviya.DATABASE.define('SewQueen', {
     info: {
