@@ -9,7 +9,7 @@ you may not use this file except in compliance with the License.
 Whats bot - Ravindu Manoj
 
 This Is Official Pluging From Ravindu Manoj
-
+*/
 const ravindu = require('textsewmake');  // button msg npm export
 const QueenSew = require('../events');
 const {MessageType, MessageOptions, Mimetype} = require('sew-web');
@@ -58,4 +58,4 @@ await message.client.sendMessage(message.jid, buttonMessage, MessageType.buttons
 
     }));
     }
-*/
+
