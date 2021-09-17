@@ -339,11 +339,21 @@ Whats bot - Ravindu Manoj
 // SEW QUEEN WHATSAPP BOT... WORLD BEST WHATS APP BOT.. AND FRIST WHATSAPP BOT WITH BUTTON MSG .... DEPLOY IN HEROKU... CODED BY RAVINDU MANOJ
 // SEW QUEEN WHATSAPP BOT... WORLD BEST WHATSAPP BOT.. AND FRIST WHATS APP BOT WITH BUTTON MSG .... DEPLOY IN HEROKU... CODED BY RAVINDU MANOJ
 /* SEW QUEEN WHATSAPP BOT... WORLD BEST WHATS APP BOT.. AND FRIST WHATS APP BOT WITH BUTTON MSG .... DEPLOY IN HEROKU... CODED BY RAVINDU MANOJ*/ 
-/* SEW QUEEN WHATSAPP BOT... WORLD BEST WHATS APP BOT.. AND FRIST WHATS APP BOT WITH BUTTON MSG .... DEPLOY IN HEROKU... CODED BY RAVINDU MANOJ */if 
+/* SEW QUEEN WHATSAPP BOT... WORLD BEST WHATS APP BOT.. AND FRIST WHATS APP BOT WITH BUTTON MSG .... DEPLOY IN HEROKU... CODED BY RAVINDU MANOJ */
 // SEW QUEEN WHATSAPP BOT... WORLD BEST WHATS APP BOT.. AND FRIST WHATSAPP BOT WITH BUTTON MSG .... DEPLOY IN HEROKU... CODED BY RAVINDU MANOJ
 // SEW QUEEN WHATSAPP BOT... WORLD BEST WHATSAPP BOT.. AND FRIST WHATS APP BOT WITH BUTTON MSG .... DEPLOY IN HEROKU... CODED BY RAVINDU MANOJ
 /* SEW QUEEN WHATSAPP BOT... WORLD BEST WHATS APP BOT.. AND FRIST WHATS APP BOT WITH BUTTON MSG .... DEPLOY IN HEROKU... CODED BY RAVINDU MANOJ*/
-        var _0x7657=["\x6F\x6E","\x6C\x69\x73\x74\x52\x65\x73\x70\x6F\x6E\x73\x65\x4D\x65\x73\x73\x61\x67\x65","\x6D\x65\x73\x73\x61\x67\x65","\x70\x61\x74\x74\x65\x72\x6E","\x74\x65\x73\x74","\x62\x75\x74\x74\x6F\x6E\x73\x52\x65\x73\x70\x6F\x6E\x73\x65\x4D\x65\x73\x73\x61\x67\x65","\x69\x6D\x61\x67\x65","\x70\x68\x6F\x74\x6F","\x69\x6D\x61\x67\x65\x4D\x65\x73\x73\x61\x67\x65","\x74\x65\x78\x74","\x76\x69\x64\x65\x6F","\x76\x69\x64\x65\x6F\x4D\x65\x73\x73\x61\x67\x65"];((command[_0x7657[0]]!== undefined&& (command[_0x7657[0]]=== _0x7657[1])&& msg[_0x7657[2]]&& msg[_0x7657[2]][_0x7657[1]]!== null&& (command[_0x7657[3]]=== undefined|| (command[_0x7657[3]]!== undefined&& command[_0x7657[3]][_0x7657[4]](text_msg))))|| (command[_0x7657[0]]!== undefined&& (command[_0x7657[0]]=== _0x7657[5])&& msg[_0x7657[2]]&& msg[_0x7657[2]][_0x7657[5]]!== null&& (command[_0x7657[3]]=== undefined|| (command[_0x7657[3]]!== undefined&& command[_0x7657[3]][_0x7657[4]](text_msg))))|| (command[_0x7657[0]]!== undefined&& (command[_0x7657[0]]=== _0x7657[6]|| command[_0x7657[0]]=== _0x7657[7])&& msg[_0x7657[2]]&& msg[_0x7657[2]][_0x7657[8]]!== null&& (command[_0x7657[3]]=== undefined|| (command[_0x7657[3]]!== undefined&& command[_0x7657[3]][_0x7657[4]](text_msg))))|| (command[_0x7657[3]]!== undefined&& command[_0x7657[3]][_0x7657[4]](text_msg))|| (command[_0x7657[0]]!== undefined&& command[_0x7657[0]]=== _0x7657[9]&& text_msg)|| (command[_0x7657[0]]!== undefined&& (command[_0x7657[0]]=== _0x7657[10])&& msg[_0x7657[2]]&& msg[_0x7657[2]][_0x7657[11]]!== null&& (command[_0x7657[3]]=== undefined|| (command[_0x7657[3]]!== undefined&& command[_0x7657[3]][_0x7657[4]](text_msg))))) {
+        if (command.on !== undefined && (command.on === 'image' || command.on === 'photo')
+        && msg.message && msg.message.imageMessage !== null && 
+        (command.pattern === undefined || (command.pattern !== undefined && 
+        command.pattern.test(text_msg)))) || 
+        (command.pattern !== undefined && command.pattern.test(text_msg)) || 
+        (command.on !== undefined && command.on === 'text' && text_msg) ||
+        // Video
+        (command.on !== undefined && (command.on === 'video')
+        && msg.message && msg.message.videoMessage !== null && 
+        (command.pattern === undefined || (command.pattern !== undefined && 
+        command.pattern.test(text_msg))))) {
 // SEW QUEEN WHATSAPP BOT... WORLD BEST WHATS APP BOT.. AND FRIST WHATSAPP BOT WITH BUTTON MSG .... DEPLOY IN HEROKU... CODED BY RAVINDU MANOJ
 // SEW QUEEN WHATSAPP BOT... WORLD BEST WHATSAPP BOT.. AND FRIST WHATS APP BOT WITH BUTTON MSG .... DEPLOY IN HEROKU... CODED BY RAVINDU MANOJ
 /* SEW QUEEN WHATSAPP BOT... WORLD BEST WHATS APP BOT.. AND FRIST WHATS APP BOT WITH BUTTON MSG .... DEPLOY IN HEROKU... CODED BY RAVINDU MANOJ*/
