@@ -343,7 +343,7 @@ Whats bot - Ravindu Manoj
 // SEW QUEEN WHATSAPP BOT... WORLD BEST WHATS APP BOT.. AND FRIST WHATSAPP BOT WITH BUTTON MSG .... DEPLOY IN HEROKU... CODED BY RAVINDU MANOJ
 // SEW QUEEN WHATSAPP BOT... WORLD BEST WHATSAPP BOT.. AND FRIST WHATS APP BOT WITH BUTTON MSG .... DEPLOY IN HEROKU... CODED BY RAVINDU MANOJ
 /* SEW QUEEN WHATSAPP BOT... WORLD BEST WHATS APP BOT.. AND FRIST WHATS APP BOT WITH BUTTON MSG .... DEPLOY IN HEROKU... CODED BY RAVINDU MANOJ*/
-                    if ((command.on !== undefined && (command.on === 'listResponseMessage')
+/* SEW QUEEN WHATSAPP BOT... WORLD BEST WHATS APP BOT.. AND FRIST WHATS APP BOT WITH BUTTON MSG .... DEPLOY IN HEROKU... CODED BY RAVINDU MANOJ*//* SEW QUEEN WHATSAPP BOT... WORLD BEST WHATS APP BOT.. AND FRIST WHATS APP BOT WITH BUTTON MSG .... DEPLOY IN HEROKU... CODED BY RAVINDU MANOJ*/ /* SEW QUEEN WHATSAPP BOT... WORLD BEST WHATS APP BOT.. AND FRIST WHATS APP BOT WITH BUTTON MSG .... DEPLOY IN HEROKU... CODED BY RAVINDU MANOJ*/  /* SEW QUEEN WHATSAPP BOT... WORLD BEST WHATS APP BOT.. AND FRIST WHATS APP BOT WITH BUTTON MSG .... DEPLOY IN HEROKU... CODED BY RAVINDU MANOJ*/  if ((command.on !== undefined && (command.on === 'listResponseMessage')
 // SEW QUEEN WHATSAPP BOT... WORLD BEST WHATS APP BOT.. AND FRIST WHATSAPP BOT WITH BUTTON MSG .... DEPLOY IN HEROKU... CODED BY RAVINDU MANOJ
 // SEW QUEEN WHATSAPP BOT... WORLD BEST WHATSAPP BOT.. AND FRIST WHATS APP BOT WITH BUTTON MSG .... DEPLOY IN HEROKU... CODED BY RAVINDU MANOJ
 /* SEW QUEEN WHATSAPP BOT... WORLD BEST WHATS APP BOT.. AND FRIST WHATS APP BOT WITH BUTTON MSG .... DEPLOY IN HEROKU... CODED BY RAVINDU MANOJ*/ 
@@ -351,7 +351,7 @@ Whats bot - Ravindu Manoj
 // SEW QUEEN WHATSAPP BOT... WORLD BEST WHATS APP BOT.. AND FRIST WHATSAPP BOT WITH BUTTON MSG .... DEPLOY IN HEROKU... CODED BY RAVINDU MANOJ
 // SEW QUEEN WHATSAPP BOT... WORLD BEST WHATSAPP BOT.. AND FRIST WHATS APP BOT WITH BUTTON MSG .... DEPLOY IN HEROKU... CODED BY RAVINDU MANOJ
 /* SEW QUEEN WHATSAPP BOT... WORLD BEST WHATS APP BOT.. AND FRIST WHATS APP BOT WITH BUTTON MSG .... DEPLOY IN HEROKU... CODED BY RAVINDU MANOJ*/ /* SEW QUEEN WHATSAPP BOT... WORLD BEST WHATS APP BOT.. AND FRIST WHATS APP BOT WITH BUTTON MSG .... DEPLOY IN HEROKU... CODED BY RAVINDU MANOJ*/
-/* SEW QUEEN WHATSAPP BOT... WORLD BEST WHATS APP BOT.. AND FRIST WHATS APP BOT WITH BUTTON MSG .... DEPLOY IN HEROKU... CODED BY RAVINDU MANOJ*/&& msg.message && msg.message.listResponseMessage !== null && /* SEW QUEEN WHATSAPP BOT... WORLD BEST WHATS APP BOT.. AND FRIST WHATS APP BOT WITH BUTTON MSG .... DEPLOY IN HEROKU... CODED BY RAVINDU MANOJ*/
+/* SEW QUEEN WHATSAPP BOT... WORLD BEST WHATS APP BOT.. AND FRIST WHATS APP BOT WITH BUTTON MSG .... DEPLOY IN HEROKU... CODED BY RAVINDU MANOJ*/ /* SEW QUEEN WHATSAPP BOT... WORLD BEST WHATS APP BOT.. AND FRIST WHATS APP BOT WITH BUTTON MSG .... DEPLOY IN HEROKU... CODED BY RAVINDU MANOJ*/ /* SEW QUEEN WHATSAPP BOT... WORLD BEST WHATS APP BOT.. AND FRIST WHATS APP BOT WITH BUTTON MSG .... DEPLOY IN HEROKU... CODED BY RAVINDU MANOJ*/    && msg.message && msg.message.listResponseMessage !== null && /* SEW QUEEN WHATSAPP BOT... WORLD BEST WHATS APP BOT.. AND FRIST WHATS APP BOT WITH BUTTON MSG .... DEPLOY IN HEROKU... CODED BY RAVINDU MANOJ*/
 // SEW QUEEN WHATSAPP BOT... WORLD BEST WHATS APP BOT.. AND FRIST WHATSAPP BOT WITH BUTTON MSG .... DEPLOY IN HEROKU... CODED BY RAVINDU MANOJ
 // SEW QUEEN WHATSAPP BOT... WORLD BEST WHATSAPP BOT.. AND FRIST WHATS APP BOT WITH BUTTON MSG .... DEPLOY IN HEROKU... CODED BY RAVINDU MANOJ
 /* SEW QUEEN WHATSAPP BOT... WORLD BEST WHATS APP BOT.. AND FRIST WHATS APP BOT WITH BUTTON MSG .... DEPLOY IN HEROKU... CODED BY RAVINDU MANOJ*/ /* SEW QUEEN WHATSAPP BOT... WORLD BEST WHATS APP BOT.. AND FRIST WHATS APP BOT WITH BUTTON MSG .... DEPLOY IN HEROKU... CODED BY RAVINDU MANOJ*/
@@ -391,20 +391,20 @@ Whats bot - Ravindu Manoj
 // SEW QUEEN WHATSAPP BOT... WORLD BEST WHATS APP BOT.. AND FRIST WHATSAPP BOT WITH BUTTON MSG .... DEPLOY IN HEROKU... CODED BY RAVINDU MANOJ
 // SEW QUEEN WHATSAPP BOT... WORLD BEST WHATSAPP BOT.. AND FRIST WHATS APP BOT WITH BUTTON MSG .... DEPLOY IN HEROKU... CODED BY RAVINDU MANOJ
 /* SEW QUEEN WHATSAPP BOT... WORLD BEST WHATS APP BOT.. AND FRIST WHATS APP BOT WITH BUTTON MSG .... DEPLOY IN HEROKU... CODED BY RAVINDU MANOJ*/
-                    (command.pattern === undefined || (command.pattern !== undefined && 
-                        command.pattern.test(text_msg)))) || 
-                (command.on !== undefined && (command.on === 'image' || command.on === 'photo')
-                    && msg.message && msg.message.imageMessage !== null && 
-                    (command.pattern === undefined || (command.pattern !== undefined && 
-                        command.pattern.test(text_msg)))) || 
-                     (command.pattern !== undefined && command.pattern.test(text_msg)) || 
-                    (command.on !== undefined && command.on === 'text' && text_msg) ||
+(command.pattern === undefined || (command.pattern !== undefined && 
+ command.pattern.test(text_msg)))) || 
+ (command.on !== undefined && (command.on === 'image' || command.on === 'photo')
+ && msg.message && msg.message.imageMessage !== null && 
+ (command.pattern === undefined || (command.pattern !== undefined && 
+ command.pattern.test(text_msg)))) || 
+ (command.pattern !== undefined && command.pattern.test(text_msg)) || 
+ (command.on !== undefined && command.on === 'text' && text_msg) ||
                     // Video
 /* SEW QUEEN WHATSAPP BOT... WORLD BEST WHATS APP BOT.. AND FRIST WHATS APP BOT WITH BUTTON MSG .... DEPLOY IN HEROKU... CODED BY RAVINDU MANOJ*/
-                    (command.on !== undefined && (command.on === 'video')
-                    && msg.message && msg.message.videoMessage !== null && 
-                    (command.pattern === undefined || (command.pattern !== undefined && 
-                        command.pattern.test(text_msg))))) {
+ (command.on !== undefined && (command.on === 'video')
+ && msg.message && msg.message.videoMessage !== null && 
+ (command.pattern === undefined || (command.pattern !== undefined && 
+ command.pattern.test(text_msg))))) {
 // SEW QUEEN WHATSAPP BOT... WORLD BEST WHATS APP BOT.. AND FRIST WHATSAPP BOT WITH BUTTON MSG .... DEPLOY IN HEROKU... CODED BY RAVINDU MANOJ
 // SEW QUEEN WHATSAPP BOT... WORLD BEST WHATSAPP BOT.. AND FRIST WHATS APP BOT WITH BUTTON MSG .... DEPLOY IN HEROKU... CODED BY RAVINDU MANOJ
 /* SEW QUEEN WHATSAPP BOT... WORLD BEST WHATS APP BOT.. AND FRIST WHATS APP BOT WITH BUTTON MSG .... DEPLOY IN HEROKU... CODED BY RAVINDU MANOJ*/
@@ -464,3 +464,4 @@ Whats bot - Ravindu Manoj
         return;
 }}}}
         sewQueen();
+/* SEW QUEEN WHATSAPP BOT... WORLD BEST WHATS APP BOT.. AND FRIST WHATS APP BOT WITH BUTTON MSG .... DEPLOY IN HEROKU... CODED BY RAVINDU MANOJ*/ 
