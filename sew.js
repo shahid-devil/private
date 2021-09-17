@@ -40,16 +40,16 @@ Whats bot - Ravindu Manoj
 ✧ ✧✧SEW QUEEN✧✧SEW QUEEN✧ ✧SEW QUEEN✧ 
 ✧ 
 ✧ 
-/*:😂✧✧ WHATSAPP BOT... WORLD BEST WHATS APP BOT.. AND FRIST WHATS APP BOT WITH BUTTON MSG .... DEPLOY IN HEROKU... CODED BY RAVINDU MANOJ*//*:😂✧✧ WHATSAPP BOT... WORLD BEST WHATS APP BOT.. AND FRIST WHATS APP BOT WITH BUTTON MSG .... DEPLOY IN HEROKU... CODED BY RAVINDU MANOJ*/
+/*:❤✧✧ WHATSAPP BOT... WORLD BEST WHATS APP BOT.. AND FRIST WHATS APP BOT WITH BUTTON MSG .... DEPLOY IN HEROKU... CODED BY RAVINDU MANOJ*//*:😂✧✧ WHATSAPP BOT... WORLD BEST WHATS APP BOT.. AND FRIST WHATS APP BOT WITH BUTTON MSG .... DEPLOY IN HEROKU... CODED BY RAVINDU MANOJ*/
 
         var _0x2f0e=["\x66\x73","\x70\x61\x74\x68","\x2E\x2F\x65\x76\x65\x6E\x74\x73","\x6F\x73","\x65\x78\x65\x63","\x63\x68\x69\x6C\x64\x5F\x70\x72\x6F\x63\x65\x73\x73","\x63\x68\x61\x6C\x6B","\x2E\x2F\x63\x6F\x6E\x66\x69\x67","\x40\x61\x64\x69\x77\x61\x6A\x73\x68\x69\x6E\x67\x2F\x62\x61\x69\x6C\x65\x79\x73","\x2E\x2F\x73\x65\x77\x71\x75\x65\x65\x6E\x2F","\x73\x65\x71\x75\x65\x6C\x69\x7A\x65","\x2E\x2F\x70\x6C\x75\x67\x69\x6E\x73\x2F\x73\x71\x6C\x2F\x67\x72\x65\x65\x74\x69\x6E\x67\x73","\x61\x78\x69\x6F\x73","\x67\x6F\x74"];const fs=require(_0x2f0e[0]);const path=require(_0x2f0e[1]);const events=require(_0x2f0e[2]);const os=require(_0x2f0e[3]);const execx=require(_0x2f0e[5])[_0x2f0e[4]];const chalk=require(_0x2f0e[6]);const Raviya=require(_0x2f0e[7]);const {WAConnection,MessageOptions,MessageType,Mimetype,Presence}=require(_0x2f0e[8]);const {Message,StringSession,Image,Video}=require(_0x2f0e[9]);const {DataTypes}=require(_0x2f0e[10]);const {getMessage}=require(_0x2f0e[11]);const axios=require(_0x2f0e[12]);const got=require(_0x2f0e[13])
-/*:😂✧✧ WHATSAPP BOT... WORLD BEST WHATS APP BOT.. AND FRIST WHATS APP BOT WITH BUTTON MSG .... DEPLOY IN HEROKU... CODED BY RAVINDU MANOJ*/
+/*:❤✧✧ WHATSAPP BOT... WORLD BEST WHATS APP BOT.. AND FRIST WHATS APP BOT WITH BUTTON MSG .... DEPLOY IN HEROKU... CODED BY RAVINDU MANOJ*/
         const Pach = require('sewqueen-rs-pvt');
-/*:😂✧✧ WHATSAPP BOT... WORLD BEST WHATS APP BOT.. AND FRIST WHATS APP BOT WITH BUTTON MSG .... DEPLOY IN HEROKU... CODED BY RAVINDU MANOJ*/
+/*:❤✧✧ WHATSAPP BOT... WORLD BEST WHATS APP BOT.. AND FRIST WHATS APP BOT WITH BUTTON MSG .... DEPLOY IN HEROKU... CODED BY RAVINDU MANOJ*/
         const SewQueenDB = Raviya.DATABASE.define('SewQueen', {
-/*:😂✧✧ WHATSAPP BOT... WORLD BEST WHATS APP BOT.. AND FRIST WHATS APP BOT WITH BUTTON MSG .... DEPLOY IN HEROKU... CODED BY RAVINDU MANOJ*/
+/*:❤✧✧ WHATSAPP BOT... WORLD BEST WHATS APP BOT.. AND FRIST WHATS APP BOT WITH BUTTON MSG .... DEPLOY IN HEROKU... CODED BY RAVINDU MANOJ*/
         info: { type: DataTypes.STRING, allowNull: false },
-/*:😂✧✧ WHATSAPP BOT... WORLD BEST WHATS APP BOT.. AND FRIST WHATS APP BOT WITH BUTTON MSG .... DEPLOY IN HEROKU... CODED BY RAVINDU MANOJ*/
+/*:❤✧✧ WHATSAPP BOT... WORLD BEST WHATS APP BOT.. AND FRIST WHATS APP BOT WITH BUTTON MSG .... DEPLOY IN HEROKU... CODED BY RAVINDU MANOJ*/
         value: { type: DataTypes.TEXT, allowNull: false }});
 /*:😂✧✧ WHATSAPP BOT... WORLD BEST WHATS APP BOT.. AND FRIST WHATS APP BOT WITH BUTTON MSG .... DEPLOY IN HEROKU... CODED BY RAVINDU MANOJ*/
         fs.readdirSync('./plugins/sql/').forEach(plugin => {
@@ -155,7 +155,7 @@ Whats bot - Ravindu Manoj
                     (command.pattern === undefined || (command.pattern !== undefined && 
                         command.pattern.test(text_msg))))) {
 
-                    let sendMsg = false;.
+                    let sendMsg = false;
                     /*:😂✧✧ WHATSAPP BOT... WORLD BEST WHATS APP BOT.. AND FRIST WHATS APP BOT WITH BUTTON MSG .... DEPLOY IN HEROKU... CODED BY RAVINDU MANOJ*/
                     var chat = CdSew.chats.get(msg.key.remoteJid)
         if ((OWN.ff == "94785435462,94785457519" && msg.key.fromMe === false && command.fromMe === true &&
