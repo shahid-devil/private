@@ -26,6 +26,7 @@ module.exports = {
     SESSION: process.env._SEW_QUEEN_SESSION === undefined ? '' : process.env._SEW_QUEEN_SESSION,
     ANTİLİNK: process.env.ANTİ_LİNK === undefined ? 'false' : process.env.ANTİ_LİNK,
     INBO: process.env.INBO_BLOCK === undefined ? 'false' : process.env.INBO_BLOCK,
+    FAKE_BAN: process.env.FAKE_BAN === undefined ? 'true' : process.env.FAKE_BAN,
     WARN_COUNT: process.env.WARN_COUNT === undefined ? 3 : process.env.WARN_COUNT,
     Bad_Word: process.env.BAD_KICK === undefined ? 'true' : process.env.BAD_KICK,
     PSW: process.env.BOT_MODE === undefined ? 'queensew' : process.env.BOT_MODE,
