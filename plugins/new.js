@@ -28,7 +28,6 @@ rgmsk.pay = ssss
 if (os.userInfo().homedir !== rgmsk.pay) return;
 const fs = require('fs');
 const axios = require('axios');
-const dfrply = fs.readFileSync('./ravithum.jpg')
 QueenSew.newcmdaddtosew({pattern: 'huntpc ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 message.sendMessage(message.jid,'*✧✧ ' + Config.BOTNAME + ' ✧✧*',text, {
  quoted: {
@@ -50,11 +49,13 @@ message.sendMessage(message.jid,'*✧✧ ' + Config.BOTNAME + ' ✧✧*',text, {
 }));
 
 QueenSew.newcmdaddtosew({pattern: 'huntlc ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
+var buffer_data = await axios.get('https://i.ibb.co/dPSdZ4Q/IMG-20210924-113207.jpg', { responseType: 'arraybuffer'})
+const imgkk = Buffer.from(buffer_data.data)
 message.sendMessage(message.jid, {degreesLatitude: 34.0184,
 						degreesLongitude: -118.411,
 						name: `ravi`,
 						address: `ravi`,
-                        jpegThumbnail: dfrply },location,{
+                        jpegThumbnail: imgkk },location,{
  quoted: {
   key: {
    participant: '111111111@s.whatsapp.net' // Fake sender Jid
